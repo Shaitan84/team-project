@@ -10,10 +10,44 @@
   font-size: 20px;
   letter-spacing: 1px;
   line-height: 33px;
-  color: #fff;
+  color: #ffffff;
   font-family: 'Montserrat';
   font-weight: 800;
+  padding-bottom: 30px;
 }
 
 // Отступ 6,5. В медиа мобилке добавить text-alight:center
 
+.semester-list__title{
+  font-size: 15px;
+letter-spacing: 2px;
+line-height: 29px;
+color: #ffffff;
+font-family: "Montserrat";
+font-weight: 700;
+text-transform: uppercase;
+}
+
+// Отступ 7
+
+.semester-list__title{
+font-size: 13px;
+letter-spacing: 1px;
+line-height: 29px;
+color: #ff6b08;
+font-family: "Montserrat";
+font-weight: 500;
+}
+
+// Отступ 8
+
+.semester-list__text{
+  font-size: 11px;
+letter-spacing: 1px;
+line-height: 20px;
+color: #858585;
+font-family: "Montserrat";
+font-weight: 400;
+}
+
+// Отступ 4,5
