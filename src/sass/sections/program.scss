@@ -8,11 +8,11 @@
 .program-wrapper {
   background-image: url(../images/our-program/background-picture.png);
   background-repeat: no-repeat;
-  background-position: left 75% bottom 25%;
+  background-position: right -25% bottom 25%;
   overflow: hidden;
 }
 // прописать в медиа подгрузки ретина картинки
-// Пофиксить позиционирование фото на бэкграунде
+// Пофиксить позиционирование фото на бэкграунде. right -50%
 
 .program-title {
   font-size: 20px;
@@ -30,8 +30,26 @@
   margin: 0 auto;
 }
 
-.semester:not(:last-child){
+.program-list::before {
+  display: block;
+  content: '';
+  width: 2px;
+  height: 1241px;
+  background-color: #575173;
+  transform: rotateZ(180deg);
+}
+
+.semester:not(:last-child) {
   margin-bottom: 38px;
+}
+
+.semester::before {
+  display: block;
+  content: '';
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: #ff6b08;
 }
 
 .semester-list__title-main {
@@ -47,7 +65,7 @@
 
 // Отступ 7
 
-.semester-list__item:not(:last-child){
+.semester-list__item:not(:last-child) {
   margin-bottom: 12px;
 }
 
@@ -58,13 +76,22 @@
   color: #ff6b08;
   font-family: 'Montserrat';
   font-weight: 500;
+  padding-left: 38px;
 }
 
-.semester-list__title:not(:last-child){
-margin-bottom: 12px;
+.semester-list__title:not(:last-child) {
+  margin-bottom: 12px;
 }
 
 // Отступ 8
+
+.semester-list__title::before {
+  display: block;
+  content: '';
+  width: 25px;
+  height: 2px;
+  background-color: #ff6b08;
+}
 
 .semester-list__text {
   font-size: 11px;
@@ -75,7 +102,7 @@ margin-bottom: 12px;
   font-weight: 400;
 }
 
-.semester-list__text:not(:last-child){
+.semester-list__text:not(:last-child) {
   margin-bottom: 10px;
 }
 
