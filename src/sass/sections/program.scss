@@ -12,6 +12,7 @@
   overflow: hidden;
 }
 // прописать в медиа подгрузки ретина картинки
+// Пофиксить позиционирование фото на бэкграунде
 
 .program-title {
   font-size: 20px;
@@ -20,10 +21,18 @@
   color: #ffffff;
   font-family: 'Montserrat';
   font-weight: 800;
-  padding-bottom: 30px;
+  margin-bottom: 30px;
 }
 
-// Отступ 6,5. В медиа мобилке добавить text-alight:center
+// Отступ 6,5.
+
+.program-list {
+  margin: 0 auto;
+}
+
+.semester:not(:last-child){
+  margin-bottom: 38px;
+}
 
 .semester-list__title-main {
   font-size: 15px;
@@ -33,9 +42,14 @@
   font-family: 'Montserrat';
   font-weight: 700;
   text-transform: uppercase;
+  margin-bottom: 14px;
 }
 
 // Отступ 7
+
+.semester-list__item:not(:last-child){
+  margin-bottom: 12px;
+}
 
 .semester-list__title {
   font-size: 13px;
@@ -44,6 +58,10 @@
   color: #ff6b08;
   font-family: 'Montserrat';
   font-weight: 500;
+}
+
+.semester-list__title:not(:last-child){
+margin-bottom: 12px;
 }
 
 // Отступ 8
@@ -60,3 +78,11 @@
 // Отступ 4,5
 
 // Здесь располагается блок "Почему нас выбирают. " Этот блок входит в секцию program.Я ей фон задала. Посмотри внимательно вложенность. Падинг боттом секции задала 70 пикселей
+
+// Медиа
+
+@media (max-width: 767px) {
+  .program-title {
+    text-align: center;
+  }
+}
