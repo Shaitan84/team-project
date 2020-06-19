@@ -1,0 +1,36 @@
+.navigation__logo {
+  width: 88px;
+}
+
+.logotype__fire-svg {
+  width: 26px;
+  height: 32px;
+  fill: #ff6b08;
+}
+
+.logotype__hell,
+.logotype__en {
+  font-family: $font-montserrat;
+  font-weight: 800;
+  color: #000000;
+  line-height: 18px;
+  font-size: 15px;
+}
+
+.logotype__en {
+  text-transform: uppercase;
+}
+
+.logotype__hell-rus,
+.logotype__en-rus {
+  font-family: $font-montserrat;
+  font-weight: 700;
+  color: #ff6b08;
+  line-height: 8px;
+  font-size: 6px;
+  text-transform: uppercase;
+}
+
+.logotype__en-rus {
+  color: #000000;
+}

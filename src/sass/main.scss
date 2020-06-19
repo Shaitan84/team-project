@@ -4,4 +4,7 @@
 
 @import 'normalize.scss';
 @import './helpers/fonts';
+@import './helpers/veriables.scss';
 @import 'base.scss';
+
+@import './sections/header.scss';
