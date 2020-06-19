@@ -1,10 +1,14 @@
 
 .program{
-  background-image: linear-gradient(to bottom, #111517 88%, #ffffff 12%), url(../images/our-program/background-picture.png);
+  background-image: linear-gradient(to bottom, #111517 88%, #ffffff 12%);
+} 
+
+  .program-wrapper{
+  background-image: url(../images/our-program/background-picture.png);
   background-repeat: no-repeat;
   background-position: right 0 bottom 25%;
 }
-// не отображается картинка, после прописать в медиа подгрузки ретина картинки
+// прописать в медиа подгрузки ретина картинки
 
 .program-title {
   font-size: 20px;
@@ -18,7 +22,7 @@
 
 // Отступ 6,5. В медиа мобилке добавить text-alight:center
 
-.semester-list__title{
+.semester-list__title-main{
   font-size: 15px;
 letter-spacing: 2px;
 line-height: 29px;
@@ -51,3 +55,5 @@ font-weight: 400;
 }
 
 // Отступ 4,5
+
+// Здесь располагается блок "Почему нас выбирают. "
