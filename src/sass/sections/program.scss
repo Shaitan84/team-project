@@ -8,11 +8,11 @@
 .program-wrapper {
   background-image: url(../images/our-program/background-picture.png);
   background-repeat: no-repeat;
-  background-position: right -25% bottom 25%;
+  background-position: right -95px bottom 25%;
   overflow: hidden;
 }
 // прописать в медиа подгрузки ретина картинки
-// Пофиксить позиционирование фото на бэкграунде. right -50%
+// Позиционирование картинки сзади
 
 .program-title {
   font-size: 20px;
@@ -28,15 +28,18 @@
 
 .program-list {
   margin: 0 auto;
+  position: relative;
 }
 
 .program-list::before {
-  display: block;
+  display: inline-block;
   content: '';
   width: 2px;
-  height: 1241px;
+  height: 100%;
   background-color: #575173;
-  transform: rotateZ(180deg);
+  transform-origin: left;
+  transform: rotate(180deg);
+  position: absolute;
 }
 
 .semester:not(:last-child) {
