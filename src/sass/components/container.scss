@@ -1,7 +1,5 @@
-@media (max-width: 767px){
-    // Размер контейнера при мобилке(до точки перелома на таблетку до 768px
-
-    .container{
-        width: 280px;
-    }
+.container{
+    width: 280px;
+    margin: 0 auto;
 }
+
