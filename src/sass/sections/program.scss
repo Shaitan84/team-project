@@ -88,13 +88,9 @@
   font-weight: 500;
   padding-left: 38px;
   position: relative;
-}
-
-.semester-list__title:not(:last-child) {
   margin-bottom: 12px;
 }
 
-// Отступ 8
 
 .semester-list__title::before {
   display: inline-block;
@@ -168,7 +164,7 @@
     width: 546px;
   }
 
-  .semester:not(:last-child){
+  .semester:not(:last-child) {
     margin-bottom: 32px;
   }
 
@@ -176,18 +172,20 @@
     transform: translate(-56px, 10px);
   }
 
-
-
-  
   .semester-list {
     display: flex;
+    flex-wrap: wrap;
   }
 
-  .semester-list__item {
-    width: 152px;
+  .semester-list__item{
+    width: 158px;
   }
+
+  // Не влезает текст в 4 семестре
 
   .semester-list__item:not(:last-child) {
     margin-right: 28px;
+    margin-bottom: 0;
   }
+
 }
