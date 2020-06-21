@@ -1,0 +1,101 @@
+.why-choose-us {
+  background-color: #000000;
+  padding-bottom: 340px;
+  &__title {
+    font-family: $font-montserrat;
+    font-size: 20px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    line-height: 30px;
+    color: #ffffff;
+  }
+  &__title-br {
+    display: block;
+  }
+  &__list {
+    counter-reset: item;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 16px 30px 26px 28px;
+  }
+  &__list-item {
+    counter-reset: number 1;
+  }
+  &__list-item::before {
+    display: block;
+    width: 25px;
+    height: 2px;
+    background-color: #ff6b08;
+    content: '';
+    float: left;
+    flex-wrap: wrap;
+    transform: translateY(600%);
+    margin-right: 10px;
+  }
+  &__description::before {
+    display: block;
+    content: counter(item, decimal-leading-zero) ' ';
+    counter-increment: item;
+    font-family: $font-montserrat;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    line-height: 29px;
+    color: #ff6b08;
+  }
+  &__description {
+    font-family: $font-montserrat;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    line-height: 20px;
+    color: #18191d;
+  }
+}
+@media (min-width: 768px) {
+  .why-choose-us {
+    background-color: #000000;
+    padding-top: 64px;
+    padding-bottom: 180px;
+    &__title {
+      font-size: 26px;
+      line-height: 33px;
+    }
+    &__title-br {
+      display: inline;
+    }
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding: 30px 124px 36px 108px;
+    }
+    &__list-item {
+      width: 200px;
+    }
+  }
+}
+@media (min-width: 1280px) {
+  .why-choose-us {
+    background-color: #000000;
+    padding-top: 74px;
+    padding-bottom: 326px;
+    &__title {
+      font-size: 42px;
+      letter-spacing: 2px;
+      line-height: 57px;
+    }
+    &__list {
+      padding: 54px 106px 120px 98px;
+    }
+    &__description::before {
+      font-size: 21px;
+    }
+    &__description {
+      font-size: 18px;
+    }
+    &__list-item {
+      width: 270px;
+    }
+  }
+}
