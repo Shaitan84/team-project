@@ -8,11 +8,11 @@
 .program-wrapper {
   background-image: url(../images/our-program/background-picture.png);
   background-repeat: no-repeat;
-  background-position: right -25% bottom 25%;
+  background-position: right -95px bottom 25%;
   overflow: hidden;
 }
 // прописать в медиа подгрузки ретина картинки
-// Пофиксить позиционирование фото на бэкграунде. right -50%
+// Позиционирование картинки сзади
 
 .program-title {
   font-size: 20px;
@@ -28,28 +28,45 @@
 
 .program-list {
   margin: 0 auto;
+  padding-left: 95px;
+  // +
+  position: relative;
 }
 
 .program-list::before {
-  display: block;
+  display: inline-block;
   content: '';
   width: 2px;
-  height: 1241px;
+  height: 92%;
+  // +
   background-color: #575173;
-  transform: rotateZ(180deg);
+  transform-origin: left;
+  transform: rotate(180deg);
+  transform: translate(-30px, 10px);
+  // +
+  position: absolute;
 }
+
+.semester{
+  position: relative;
+}
+// +
 
 .semester:not(:last-child) {
   margin-bottom: 38px;
 }
 
 .semester::before {
-  display: block;
+  display: inline-block;
+  // +
   content: '';
   width: 10px;
   height: 10px;
   border-radius: 5px;
   background-color: #ff6b08;
+  position: absolute;
+  transform: translate(-34px, 10px);
+  // +
 }
 
 .semester-list__title-main {
@@ -60,6 +77,7 @@
   font-family: 'Montserrat';
   font-weight: 700;
   text-transform: uppercase;
+  text-align: top;
   margin-bottom: 14px;
 }
 
@@ -77,6 +95,7 @@
   font-family: 'Montserrat';
   font-weight: 500;
   padding-left: 38px;
+  position: relative;
 }
 
 .semester-list__title:not(:last-child) {
@@ -86,11 +105,16 @@
 // Отступ 8
 
 .semester-list__title::before {
-  display: block;
+  display: inline-block;
   content: '';
   width: 25px;
   height: 2px;
   background-color: #ff6b08;
+  transform-origin: left;
+  transform: rotate(180deg);
+  transform: translate(-38px, 13px);
+  position: absolute;
+  // +
 }
 
 .semester-list__text {
@@ -105,6 +129,12 @@
 .semester-list__text:not(:last-child) {
   margin-bottom: 10px;
 }
+
+.semester-list__title--block{
+  display: inline-block;
+  height: 29px;
+}
+// +
 
 // Отступ 4,5
 
