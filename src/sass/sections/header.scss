@@ -1,36 +1,172 @@
-.navigation__logo {
-  width: 88px;
+.header {
+  background-image: url(../images/header-foto/shadow-mobile.png);
+  background-repeat: no-repeat;
+  background-position-y: 50px;
 }
 
-.logotype__fire-svg {
-  width: 26px;
-  height: 32px;
-  fill: #ff6b08;
+.navigation {
+  padding-top: 34px;
+
+  &__logo {
+    width: 78px;
+    margin-bottom: 56px;
+  }
 }
 
-.logotype__hell,
-.logotype__en {
+.logotype {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+
+  &__fire-svg {
+    width: 24px;
+    height: 32px;
+    fill: #ff6b08;
+  }
+
+  &__hell,
+  &__en {
+    font-family: $font-montserrat;
+    font-weight: 800;
+    color: #000000;
+    line-height: 18px;
+    font-size: 15px;
+  }
+
+  &__en {
+    text-transform: uppercase;
+  }
+
+  &__hell-rus,
+  &__en-rus {
+    font-family: $font-montserrat;
+    font-weight: 700;
+    color: #ff6b08;
+    line-height: 8px;
+    font-size: 6px;
+    text-transform: uppercase;
+  }
+
+  &__en-rus {
+    color: #000000;
+  }
+}
+
+.about-us__title {
+  color: #18191d;
   font-family: $font-montserrat;
   font-weight: 800;
-  color: #000000;
-  line-height: 18px;
+  font-size: 20px;
+  line-height: 29px;
+  letter-spacing: 0.6px;
+  white-space: pre-line;
+  margin-bottom: 32px;
+}
+
+.about-us__heavy {
+  color: #b9b9b9;
+  font-family: $font-montserrat;
+  font-weight: 500;
   font-size: 15px;
+  line-height: 20px;
+  letter-spacing: 0.75px;
 }
 
-.logotype__en {
-  text-transform: uppercase;
-}
-
-.logotype__hell-rus,
-.logotype__en-rus {
+.about-us__plus25 {
+  color: #18191d;
   font-family: $font-montserrat;
   font-weight: 700;
-  color: #ff6b08;
-  line-height: 8px;
-  font-size: 6px;
-  text-transform: uppercase;
+  font-size: 15px;
+  line-height: 20px;
+  margin-bottom: 36px;
+  text-align: justify;
+
+  &info {
+    color: #ff6b08;
+  }
 }
 
-.logotype__en-rus {
-  color: #000000;
+.btn-freelesson {
+  color: #ffffff;
+  font-family: $font-montserrat;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 11px;
+  line-height: 13px;
+  letter-spacing: 0.5px;
+  background-color: #ff6b08;
+  width: 250px;
+  height: 48px;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0);
+  margin-bottom: 36px;
+}
+
+.about-us__teacher {
+  margin: auto;
+  margin-bottom: 88px;
+}
+
+.advantages__list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.advantages__list-item {
+  display: flex;
+}
+
+.advantages__list-icon {
+  fill: #ff6b08;
+  width: 280px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.advantages__list-icon-wrapper {
+  width: 58px;
+  height: 58px;
+  margin: 0;
+  display: flex;
+  margin-bottom: 24px;
+  border-top: 2px solid #ff6b08;
+  border-left: 2px solid #ff6b08;
+  border-bottom: 2px solid #ff6b08;
+  background: linear-gradient(#ff6b08, #ff6b08),
+    linear-gradient(#ff6b08, #ff6b08);
+  background-size: 2px 10px,
+    2px 10px;
+  background-repeat: no-repeat,
+    no-repeat;
+  background-position: right top,
+    right bottom;
+}
+
+.advantages__list-icon p {
+  color: #18191d;
+  width: 130px;
+  font-size: 13px;
+  line-height: 20px;
+  letter-spacing: 0.65px;
+  font-family: $font-montserrat;
+  font-weight: 700;
+}
+
+.advantages__list-icon_student {
+  width: 30px;
+  height: 36px;
+}
+
+.advantages__list-icon_mobile {
+  width: 34px;
+  height: 34px;
+}
+
+.advantages__list-icon_insuarence {
+  width: 32px;
+  height: 36px;
 }
