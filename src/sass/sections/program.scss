@@ -1,6 +1,6 @@
 .program {
   background-image: linear-gradient(to bottom, #111517 88%, #ffffff 12%);
-  padding: 50px 0 70px;
+  padding: 50px 0 45px;
 }
 
 // падинг ботом задала 70 пикселей
@@ -11,8 +11,6 @@
   background-position: right -95px bottom 25%;
   overflow: hidden;
 }
-// прописать в медиа подгрузки ретина картинки
-// Позиционирование картинки сзади
 
 .program-title {
   font-size: 20px;
@@ -23,13 +21,11 @@
   font-weight: 800;
   margin-bottom: 30px;
 }
-
 // Отступ 6,5.
 
 .program-list {
   margin: 0 auto;
   padding-left: 95px;
-  // +
   position: relative;
 }
 
@@ -38,19 +34,16 @@
   content: '';
   width: 2px;
   height: 92%;
-  // +
   background-color: #575173;
   transform-origin: left;
   transform: rotate(180deg);
   transform: translate(-30px, 10px);
-  // +
   position: absolute;
 }
 
-.semester{
+.semester {
   position: relative;
 }
-// +
 
 .semester:not(:last-child) {
   margin-bottom: 38px;
@@ -58,7 +51,6 @@
 
 .semester::before {
   display: inline-block;
-  // +
   content: '';
   width: 10px;
   height: 10px;
@@ -66,7 +58,6 @@
   background-color: #ff6b08;
   position: absolute;
   transform: translate(-34px, 10px);
-  // +
 }
 
 .semester-list__title-main {
@@ -80,7 +71,6 @@
   text-align: top;
   margin-bottom: 14px;
 }
-
 // Отступ 7
 
 .semester-list__item:not(:last-child) {
@@ -96,13 +86,9 @@
   font-weight: 500;
   padding-left: 38px;
   position: relative;
-}
-
-.semester-list__title:not(:last-child) {
   margin-bottom: 12px;
 }
 
-// Отступ 8
 
 .semester-list__title::before {
   display: inline-block;
@@ -114,7 +100,6 @@
   transform: rotate(180deg);
   transform: translate(-38px, 13px);
   position: absolute;
-  // +
 }
 
 .semester-list__text {
@@ -127,14 +112,13 @@
 }
 
 .semester-list__text:not(:last-child) {
-  margin-bottom: 10px;
+  margin-bottom: 6px;
 }
 
-.semester-list__title--block{
+.semester-list__title--block {
   display: inline-block;
   height: 29px;
 }
-// +
 
 // Отступ 4,5
 
@@ -145,5 +129,59 @@
 @media (max-width: 767px) {
   .program-title {
     text-align: center;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1279px) {
+  .program {
+    padding: 52px 0 52px;
+  }
+
+  .program-wrapper {
+    background-position: right 0 bottom 31%;
+  }
+
+  .program-title {
+    font-size: 26px;
+    letter-spacing: 1px;
+    line-height: 63px;
+    margin-bottom: 44px;
+  }
+  // Отступ 18.5
+
+  .program-list {
+    padding-left: 145px;
+  }
+
+  .program-list::before {
+    height: 87%;
+    transform: translate(-52px, 10px);
+  }
+
+  .semester {
+    width: 546px;
+  }
+
+  .semester:not(:last-child) {
+    margin-bottom: 32px;
+  }
+
+  .semester::before {
+    transform: translate(-56px, 10px);
+  }
+
+  .semester-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .semester-list__item{
+    width: 158px;
+  }
+  // Не влезает текст в 4 семестре
+
+  .semester-list__item:not(:last-child) {
+    margin-right: 28px;
+    margin-bottom: 0;
   }
 }
