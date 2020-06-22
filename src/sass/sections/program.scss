@@ -189,7 +189,7 @@
     padding: 78px 0 90px;
     position: relative;
   }
-
+  // сделала релейтив чтоб к ней привязать бифор линию
   .program-wrapper {
     background-position: left 0 bottom 28%;
   }
@@ -202,25 +202,44 @@
   }
 
   // 10.5
-  
+
   .program-list {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     padding-left: 0;
     position: static;
+    // MARGIN-BOTTOM????
   }
 
+  // сделала статик чтою отвязать бифор
+
   .program-list::before {
-    height: 100%;
+    display: block;
+    height: 100vh;
+    transform-origin: left;
     transform: rotate(90deg);
   }
 
+  // Не могу поднять линию и расположить на ширишу всего экрана
+
+  .semester:not(:last-child) {
+    margin-bottom: 0;
+  }
+
+  .semester::before {
+    width: 17px;
+    height: 17px;
+    border-radius: 8px;
+    transform: translate(0, -48px);
+  }
 }
 
 @media (min-width: 1680px) {
   .program {
     background-image: linear-gradient(to bottom, #111517 79%, #ffffff 21%);
     padding: 126px 0 122px;
+    position: relative;
   }
 
   .program-wrapper {
@@ -236,6 +255,18 @@
     display: flex;
     flex-wrap: wrap;
     padding-left: 0;
+    // MARGIN-BOTTOM????
   }
 
+  // TimeLine СДЕЛАТЬ!
+
+  .semester:not(:last-child) {
+    margin-bottom: 0;
+  }
+  .semester::before {
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    transform: translate(0, -70px);
+  }
 }
