@@ -3,8 +3,6 @@
   padding: 50px 0 45px;
 }
 
-// падинг ботом задала 70 пикселей
-
 .program-wrapper {
   background-image: url(../images/our-program/background-picture.png);
   background-repeat: no-repeat;
@@ -89,7 +87,6 @@
   margin-bottom: 12px;
 }
 
-
 .semester-list__title::before {
   display: inline-block;
   content: '';
@@ -134,6 +131,7 @@
 
 @media (min-width: 768px) and (max-width: 1279px) {
   .program {
+    background-image: linear-gradient(to bottom, #111517 76%, #ffffff 24%);
     padding: 52px 0 52px;
   }
 
@@ -175,13 +173,69 @@
     flex-wrap: wrap;
   }
 
-  .semester-list__item{
-    width: 158px;
+  .semester-list__item {
+    width: 162px;
   }
-  // Не влезает текст в 4 семестре
 
   .semester-list__item:not(:last-child) {
     margin-right: 28px;
     margin-bottom: 0;
   }
+}
+
+@media (min-width: 1280px) and (max-width: 1679px) {
+  .program {
+    background-image: linear-gradient(to bottom, #111517 92%, #ffffff 8%);
+    padding: 78px 0 90px;
+    position: relative;
+  }
+
+  .program-wrapper {
+    background-position: left 0 bottom 28%;
+  }
+
+  .program-title {
+    font-size: 42px;
+    letter-spacing: 2px;
+    line-height: 63px;
+    margin-bottom: 90px;
+  }
+
+  // 10.5
+  
+  .program-list {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    position: static;
+  }
+
+  .program-list::before {
+    height: 100%;
+    transform: rotate(90deg);
+  }
+
+}
+
+@media (min-width: 1680px) {
+  .program {
+    background-image: linear-gradient(to bottom, #111517 79%, #ffffff 21%);
+    padding: 126px 0 122px;
+  }
+
+  .program-wrapper {
+    background-position: left 0 bottom 25%;
+  }
+
+  .program-title {
+    font-size: 46px;
+    margin-bottom: 162px;
+  }
+
+  .program-list {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+  }
+
 }
