@@ -71,7 +71,7 @@ a {
 .background {
   width: 100%;
   height: 538px;
-  background-image: url(./bg-contacts.png);
+  background-image: url(../images/bg-contacts.png);
   background-repeat: no-repeat;
   background-size: cover;
   margin-bottom: 34px;
@@ -139,7 +139,7 @@ a {
 .phone-number {
   display: flex;
   font-size: 18px;
-  font-family:$font-montserrat;
+  font-family: $font-montserrat;
   color: rgb(17, 21, 23);
   font-weight: bold;
   margin-left: 40px;
@@ -301,7 +301,7 @@ a {
   }
 
   .background {
-    background-image: url(./desktop-bg.png);
+    background-image: url(../images/desktop-bg.png);
     width: 100%;
     height: 750px;
   }
