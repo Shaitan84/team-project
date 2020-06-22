@@ -14,7 +14,7 @@
 
 <body>
   <header class="header">
-    <div class="conteiner">
+    <div class="container header-shadow">
       <nav class="navigation">
         <div class="navigation__logo">
           <a href="#" class="logotype">
@@ -28,10 +28,155 @@
             <span class="logotype__en-rus">английский</span>
           </a>
         </div>
+        <div class="header__menu">
+          <ul class="header__list">
+            <li class="header__list-item">
+              <a href="#" class="heder__link">
+                программа обучения
+              </a>
+            </li>
+            <li class="header__list-item">
+              <a href="#" class="heder__link">
+                о нас
+              </a>
+            </li>
+            <li class="header__list-item">
+              <a href="#" class="heder__link">
+                варианты обучения
+              </a>
+            </li>
+            <li class="header__list-item">
+              <a href="#" class="heder__link">
+                контакты
+              </a>
+            </li>
+          </ul>
+        </div>
+        <button class="btn-consultation">консультация по телефону</button>
+        <div class="header_burger">
+          <span>
+          </span>
+        </div>
       </nav>
+      <div class="about-us">
+        <h3 class="about-us__title">Комплексная подготовка к ВНО
+          <span>по английскому языку</span></h3>
+        <p class="about-us__heavy">Просто не будет.</p>
+        <p class="about-us__plus25">Но ты гарантировано наберешь <span class="about-us__plus25info">+25 баллов</span></p>
+        <button class="btn-freelesson">хочу на бесплатное занятие</button>
+      </div>
+      <img srcset="./images/header-foto/group1-min.jpg 215w, ./images/header-foto/group1@2x-min.jpg 430w"
+        class="about-us__teacher" src="./images/header-foto/group1.jpg" height="185" sizes="215px" alt="photo-techer">
+    </div>
+    <div class="advantages container">
+      <ul class="advantages__list">
+        <li class="advantages__list-item">
+          <div class="advantages__list-icon">
+            <div class="advantages__list-icon-wrapper">
+              <title>student</title>
+              <svg class="advantages__list-icon advantages__list-icon_student">
+                <use href="./images/icons/header/sprite.svg#icon-student">
+              </svg>
+            </div>
+            <p>Адаптированная авторская программа ВНО</p>
+          </div>
+        </li>
+        <li class="advantages__list-item">
+          <div class="advantages__list-icon">
+            <div class="advantages__list-icon-wrapper">
+              <title>mobile</title>
+              <svg class="advantages__list-icon advantages__list-icon_mobile">
+                <use href="./images/icons/header/sprite.svg#icon-mobile-learning">
+              </svg>
+            </div>
+            <p>Современные методики обучения</p>
+          </div>
+        </li>
+        <li class="advantages__list-item">
+          <div class="advantages__list-icon">
+            <div class="advantages__list-icon-wrapper .advantages__list-icon-wrapper_last">
+              <title>insuarence</title>
+              <svg class="advantages__list-icon advantages__list-icon_insuarence">
+                <use href="./images/icons/header/sprite.svg#icon-insuarance">
+              </svg>
+            </div>
+            <p>Финансовая гарантия результата</p>
+          </div>
+        </li>
+      </ul>
     </div>
   </header>
   <main>
+    <section class="how-we-do how-we-do__section">
+        <div class="container">
+            <h2 class="how-we-do__title">Как мы это делаем</h2>
+            <ul class="how-we-do__list">
+                <li class="how-we-do__list-item">
+                    <svg class="how-to-do__list-icon how-to-do__list-icon_study">
+                        <title>Audiobook icon</title>
+                        <use href="./images/how-to-do/how-to-do-sprite.svg#icon-study"></use>
+                    </svg>
+                    <h3 class="how-we-do__list-item-title">Адаптированная программа подготовки к ВНО</h3>
+                    <p class="how-we-do__list-item-description">Ты будешь изучать грамматику
+                        и лексику одновременно.
+                        И ты научишься писать сочинения.</p>
+                </li>
+                <li class="how-we-do__list-item">
+                    <svg class="how-to-do__list-icon how-to-do__list-icon_mobile-learning">
+                        <title>Mobile learning icon</title>
+                        <use href="./images/how-to-do/how-to-do-sprite.svg#icon-mobile-learning"></use>
+                    </svg>
+                    <h3 class="how-we-do__list-item-title">Аудиторное
+                        и онлайн-обучение</h3>
+                    <p class="how-we-do__list-item-description">Учитель поможет не только
+                        в аудитории, но и во время домашней подготовки. Родители могут участвовать в чате при желании.
+                    </p>
+                </li>
+                <li class="how-we-do__list-item">
+                    <svg class="how-to-do__list-icon how-to-do__list-icon_open-book">
+                        <title>Open book icon</title>
+                        <use href="./images/how-to-do/how-to-do-sprite.svg#icon-open-book"></use>
+                    </svg>
+                    <h3 class="how-we-do__list-item-title">Привычка читать
+                        на английском языке</h3>
+                    <p class="how-we-do__list-item-description">Статьи из источников, которые используются при
+                        разработке
+                        настоящего ВНО, будут приходить на телефон дважды в неделю.
+                    </p>
+                </li>
+                <li class="how-we-do__list-item">
+                    <svg class="how-to-do__list-icon how-to-do__list-icon_global-communication">
+                        <title>Global communication icon</title>
+                        <use href="./images/how-to-do/how-to-do-sprite.svg#icon-global-communication"></use>
+                    </svg>
+                    <h3 class="how-we-do__list-item-title">Психологическая поддержка</h3>
+                    <p class="how-we-do__list-item-description">Мы научим тебя методикам прохождения тестирований,
+                        умению
+                        планировать свою подготовку уверенности в себе
+                    </p>
+                </li>
+                <li class="how-we-do__list-item">
+                    <svg class="how-to-do__list-icon how-to-do__list-icon_female-student">
+                        <title>Female student icon</title>
+                        <use href="./images/how-to-do/how-to-do-sprite.svg#icon-female-student"></use>
+                    </svg>
+                    <h3 class="how-we-do__list-item-title">Обучение по автроским пособиям</h3>
+                    <p class="how-we-do__list-item-description">Тебе не нужно тратить время на самостоятельный поиск
+                        материала и ничего покупать дополнительно. Мы составили 2 пособия
+                        для тебя.</p>
+                </li>
+                <li class="how-we-do__list-item">
+                    <svg class="how-to-do__list-icon how-to-do__list-icon_audio-book">
+                        <title>Book icon</title>
+                        <use href="./images/how-to-do/how-to-do-sprite.svg#icon-audio-book"></use>
+                    </svg>
+                    <h3 class="how-we-do__list-item-title">Умение воспринивать устную английскую речь</h3>
+                    <p class="how-we-do__list-item-description">“F.R.I.E.N.D.S” тебе не помогут.
+                        Ты будешь регулярно слушать и разбирать аудиозаписи в соответствии с изучаемой лексикой.</p>
+                </li>
+            </ul>
+        </div>
+    </section>
     <section class="program">
             <div class="program-wrapper">
                 <div class="container">
@@ -120,7 +265,6 @@
                             <ul class="semester-list">
                                 <li class="semester-list__item">
                                     <h4 class="semester-list__title semester-list__title--block"><span class="visually-hidden">Test</span></h4>
-                                    <!-- нужно спрятать текст в заголовке 5 семестра -->
                                     <p class="semester-list__text">Revision</p>
                                     <p class="semester-list__text">Tests</p>
                                 </li>
@@ -129,8 +273,65 @@
                     </ul>
                 </div>
             </div>
-        <!-- Здесь располагается блок "Почему нас выбирают. " -->
     </section>
+    <section class="contacts container">
+        <div class="background">
+            <div class="form ">
+                <h2 class="contact-title">
+                    Регистрация на <span class="orange">бесплатную</span> телефонную
+                    <span class="orange">консультацию</span>
+                    по нюансам ЗНО <p class="break-word">по английскому языку</p>
+                </h2>
+                <h3 class="contact-subtitle">
+                    Оставь заявку на участие в <span class="orange">бесплатном занятии.</span>
+                    <p class="break-word">С вами свяжется
+                        консультант
+                        и ответит на вопросы.</p>
+                </h3>
+                <form action="#" method="GET" class="contact-form">
+                    <div class="input-common">
+                        <ul>
+                            <li>
+                                <input name="user_name" type=" text" class="input" placeholder="Имя*" required
+                                    minlength="2" />
+                            </li>
+                            <li>
+                                <input name="user_phone" type="tel" class="input" placeholder="Телефон*" pattern="[0-9]{10}"
+                                    required />
+                            </li>
+                        </ul>
+                    </div>
+    
+                    <button type="submit" class="contact-form-button">
+                        хочу на бесплатное занятие
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+    <footer class="container">
+        <div class="contacts">
+            <ul class="contacts-list">
+                <li class="contacts-list__item">
+                    <a href="tel:+38 (000) 000 00 00" class="phone-number">+38 (000) 000 00 00</a>
+                </li>
+                <li class="contacts-list__item">
+                    <a href="https://www.instagram.com/instagram/" target="_blank" title="New Window" class="instagram"></a>
+                </li>
+                <li class="contacts-list__item logo"></li>
+            </ul>
+    
+    
+    
+    
+        </div>
+        <div class="copyrights">
+            <a href="#" class="copyrights__text">@ Все права защищены, 2019</a>
+        </div>
+    
+    
+    </footer>
   </main>
   <!-- Сюда будет всталена ссылка на файл скриптов -->
   <!-- inject:js -->
