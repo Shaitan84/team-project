@@ -1,39 +1,3 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: inherit;
-}
-ul,
-ol {
-  list-style: none;
-}
-
-img {
-  display: block;
-  height: auto;
-  max-width: 100%;
-}
-
-html {
-  box-sizing: border-box;
-}
-
-a {
-  text-decoration: none;
-}
-
-.visually-hidden {
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-}
-
 .container {
   width: 320px;
   margin: 0 auto;
@@ -71,7 +35,7 @@ a {
 .background {
   width: 100%;
   height: 538px;
-  background-image: url(../images/bg-contacts.png);
+  background-image: url(../images/contact-form-footer/bg-contacts.png);
   background-repeat: no-repeat;
   background-size: cover;
   margin-bottom: 34px;
@@ -150,7 +114,7 @@ a {
   display: block;
   height: 32px;
   background-repeat: no-repeat;
-  background-image: url(./icon-tel.png);
+  background-image: url(../images/contact-form-footer/icon-tel.png);
   padding-left: 35px;
   padding-top: 10px;
 }
@@ -159,7 +123,7 @@ a {
   display: block;
   width: 40px;
   height: 40px;
-  background-image: url(./instagram.png);
+  background-image: url(../images/contact-form-footer/instagram.png);
   background-repeat: no-repeat;
   margin: 0 auto;
   margin-top: 10px;
@@ -168,7 +132,7 @@ a {
 .logo {
   width: 90px;
   height: 40px;
-  background-image: url(./logo.png);
+  background-image: url(../images/contact-form-footer/logo.png);
   background-repeat: no-repeat;
   margin: 0 auto;
   margin-top: 20px;
@@ -183,7 +147,7 @@ a {
   }
 
   .background {
-    background-image: url(./bg-tablet.png);
+    background-image: url(../images/contact-form-footer/bg-tablet.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -264,7 +228,7 @@ a {
     display: block;
     width: 40px;
     height: 40px;
-    background-image: url(./instagram.png);
+    background-image: url(../images/contact-form-footer/instagram.png);
     background-repeat: no-repeat;
     margin-top: 0px;
     position: relative;
@@ -286,7 +250,9 @@ a {
     margin: 0;
     padding: 0;
   }
-
+  .contacts-list {
+    margin-bottom: 30px;
+  }
   .copyrights__text {
     text-align: left;
     margin-left: 35px;
@@ -301,7 +267,7 @@ a {
   }
 
   .background {
-    background-image: url(../images/desktop-bg.png);
+    background-image: url(../images/contact-form-footer/desktop-bg.png);
     width: 100%;
     height: 750px;
   }
