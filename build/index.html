@@ -28,6 +28,35 @@
             <span class="logotype__en-rus">английский</span>
           </a>
         </div>
+        <div class="header__menu">
+          <ul class="header__list">
+            <li class="header__list-item">
+              <a href="#" class="heder__link">
+                программа обучения
+              </a>
+            </li>
+            <li class="header__list-item">
+              <a href="#" class="heder__link">
+                о нас
+              </a>
+            </li>
+            <li class="header__list-item">
+              <a href="#" class="heder__link">
+                варианты обучения
+              </a>
+            </li>
+            <li class="header__list-item">
+              <a href="#" class="heder__link">
+                контакты
+              </a>
+            </li>
+          </ul>
+        </div>
+        <button class="btn-consultation">консультация по телефону</button>
+        <div class="header_burger">
+          <span>
+          </span>
+        </div>
       </nav>
       <div class="about-us">
         <h3 class="about-us__title">Комплексная подготовка к ВНО
@@ -65,7 +94,7 @@
         </li>
         <li class="advantages__list-item">
           <div class="advantages__list-icon">
-            <div class="advantages__list-icon-wrapper">
+            <div class="advantages__list-icon-wrapper .advantages__list-icon-wrapper_last">
               <title>insuarence</title>
               <svg class="advantages__list-icon advantages__list-icon_insuarence">
                 <use href="./images/icons/header/sprite.svg#icon-insuarance">
@@ -236,7 +265,6 @@
                             <ul class="semester-list">
                                 <li class="semester-list__item">
                                     <h4 class="semester-list__title semester-list__title--block"><span class="visually-hidden">Test</span></h4>
-                                    <!-- нужно спрятать текст в заголовке 5 семестра -->
                                     <p class="semester-list__text">Revision</p>
                                     <p class="semester-list__text">Tests</p>
                                 </li>
@@ -245,8 +273,65 @@
                     </ul>
                 </div>
             </div>
-        <!-- Здесь располагается блок "Почему нас выбирают. " -->
     </section>
+    <section class="contacts container">
+        <div class="background">
+            <div class="form ">
+                <h2 class="contact-title">
+                    Регистрация на <span class="orange">бесплатную</span> телефонную
+                    <span class="orange">консультацию</span>
+                    по нюансам ЗНО <p class="break-word">по английскому языку</p>
+                </h2>
+                <h3 class="contact-subtitle">
+                    Оставь заявку на участие в <span class="orange">бесплатном занятии.</span>
+                    <p class="break-word">С вами свяжется
+                        консультант
+                        и ответит на вопросы.</p>
+                </h3>
+                <form action="#" method="GET" class="contact-form">
+                    <div class="input-common">
+                        <ul>
+                            <li>
+                                <input name="user_name" type=" text" class="input" placeholder="Имя*" required
+                                    minlength="2" />
+                            </li>
+                            <li>
+                                <input name="user_phone" type="tel" class="input" placeholder="Телефон*" pattern="[0-9]{10}"
+                                    required />
+                            </li>
+                        </ul>
+                    </div>
+    
+                    <button type="submit" class="contact-form-button">
+                        хочу на бесплатное занятие
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+    <footer class="container">
+        <div class="contacts">
+            <ul class="contacts-list">
+                <li class="contacts-list__item">
+                    <a href="tel:+38 (000) 000 00 00" class="phone-number">+38 (000) 000 00 00</a>
+                </li>
+                <li class="contacts-list__item">
+                    <a href="https://www.instagram.com/instagram/" target="_blank" title="New Window" class="instagram"></a>
+                </li>
+                <li class="contacts-list__item logo"></li>
+            </ul>
+    
+    
+    
+    
+        </div>
+        <div class="copyrights">
+            <a href="#" class="copyrights__text">@ Все права защищены, 2019</a>
+        </div>
+    
+    
+    </footer>
   </main>
   <!-- Сюда будет всталена ссылка на файл скриптов -->
   <!-- inject:js -->
