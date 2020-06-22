@@ -187,6 +187,7 @@
   .program {
     background-image: linear-gradient(to bottom, #111517 92%, #ffffff 8%);
     padding: 78px 0 90px;
+    position: relative;
   }
 
   .program-wrapper {
@@ -206,6 +207,12 @@
     display: flex;
     flex-wrap: wrap;
     padding-left: 0;
+    position: static;
+  }
+
+  .program-list::before {
+    height: 100%;
+    transform: rotate(90deg);
   }
 
 }
