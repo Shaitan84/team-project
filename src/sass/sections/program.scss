@@ -202,6 +202,12 @@
 
   // 10.5
   
+  .program-list {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+  }
+
 }
 
 @media (min-width: 1680px) {
@@ -218,4 +224,11 @@
     font-size: 46px;
     margin-bottom: 162px;
   }
+
+  .program-list {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+  }
+
 }
