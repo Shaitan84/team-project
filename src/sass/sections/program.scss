@@ -10,6 +10,12 @@
   overflow: hidden;
 }
 
+.program-block{
+  margin-bottom: 44px;
+}
+
+// Марджин боттом чтоб отодвинуть блок почему нас выбирают
+
 .program-title {
   font-size: 20px;
   letter-spacing: 1px;
@@ -187,9 +193,8 @@
   .program {
     background-image: linear-gradient(to bottom, #111517 92%, #ffffff 8%);
     padding: 78px 0 90px;
-    position: relative;
   }
-  // сделала релейтив чтоб к ней привязать бифор линию
+
   .program-wrapper {
     background-position: left 0 bottom 28%;
   }
@@ -200,7 +205,6 @@
     line-height: 63px;
     margin-bottom: 90px;
   }
-
   // 10.5
 
   .program-list {
@@ -208,20 +212,14 @@
     flex-wrap: wrap;
     justify-content: space-between;
     padding-left: 0;
-    position: static;
     // MARGIN-BOTTOM????
   }
 
-  // сделала статик чтою отвязать бифор
-
   .program-list::before {
-    display: block;
-    height: 100vh;
-    transform-origin: left;
-    transform: rotate(90deg);
+    height: 100vw;
+    transform-origin: 100% 0;
+    transform: rotate(-90deg) translate(0, -138px);
   }
-
-  // Не могу поднять линию и расположить на ширишу всего экрана
 
   .semester:not(:last-child) {
     margin-bottom: 0;
@@ -257,8 +255,6 @@
     padding-left: 0;
     // MARGIN-BOTTOM????
   }
-
-  // TimeLine СДЕЛАТЬ!
 
   .semester:not(:last-child) {
     margin-bottom: 0;
