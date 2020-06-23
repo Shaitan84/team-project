@@ -7,13 +7,16 @@
   color: #111517;
   text-align: center;
 }
+
 .we-guarantee__list-wraper {
   background-color: #f1f1f1;
   padding: 24px 0;
 }
+
 .we-guarantee__br-color {
   color: #ff6b08;
 }
+
 .we-guarantee__description {
   font-family: 'Montserrat';
   font-size: 11px;
@@ -22,6 +25,7 @@
   line-height: 20px;
   color: #18191d;
 }
+
 .we-guarantee__list-item {
   padding-left: 2rem;
   background-image: url('../../images/we-guarante/fire.svg');
@@ -29,22 +33,27 @@
   background-size: 14px 20px;
   background-repeat: no-repeat;
 }
+
 @media (min-width: 768px) {
   .we-guarantee__title {
     font-size: 26px;
   }
+
   .we-guarantee__list-wraper {
-    background-color: rgb(255, 255, 255, 0.1);
+    background-color: rgba(255, 255, 255, 0.1);
   }
+
   .we-guarantee__list {
     background-color: #f1f1f1;
   }
 }
+
 @media (min-width: 1280px) {
   .we-guarantee__title {
     font-size: 42px;
     letter-spacing: 2px;
   }
+
   .we-guarantee__description {
     font-size: 18px;
     line-height: 29px;
