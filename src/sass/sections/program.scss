@@ -1,3 +1,5 @@
+// Начало секции Наша программа
+
 .program {
   background-image: linear-gradient(to bottom, #111517 88%, #ffffff 12%);
   padding: 50px 0 45px;
@@ -6,15 +8,13 @@
 .program-wrapper {
   background-image: url(../images/our-program/background-picture.png);
   background-repeat: no-repeat;
-  background-position: right -95px bottom 25%;
+  background-position: right -95px bottom 23%;
   overflow: hidden;
 }
 
-// .program-block {
-//   margin-bottom: 44px;
-// }
-
-// Марджин боттом чтоб отодвинуть блок почему нас выбирают
+.program-block {
+  margin-bottom: 44px;
+}
 
 .program-title {
   font-size: 20px;
@@ -25,7 +25,6 @@
   font-weight: 800;
   margin-bottom: 30px;
 }
-// Отступ 6,5.
 
 .program-list {
   margin: 0 auto;
@@ -75,7 +74,6 @@
   text-align: top;
   margin-bottom: 14px;
 }
-// Отступ 7
 
 .semester-list__item:not(:last-child) {
   margin-bottom: 12px;
@@ -123,10 +121,6 @@
   height: 29px;
 }
 
-// Отступ 4,5
-
-// Здесь располагается блок "Почему нас выбирают. " Этот блок входит в секцию program.Я ей фон задала. Посмотри внимательно вложенность. Падинг боттом секции задала 70 пикселей
-
 
 @media (max-width: 767px) {
   .program-title {
@@ -136,12 +130,16 @@
 
 @media (min-width: 768px) and (max-width: 1279px) {
   .program {
-    background-image: linear-gradient(to bottom, #111517 76%, #ffffff 24%);
+    background-image: linear-gradient(to bottom, #111517 84%, #ffffff 16%);
     padding: 52px 0 52px;
   }
 
   .program-wrapper {
-    background-position: right 0 bottom 31%;
+    background-position: right 0 bottom 30%;
+  }
+
+  .program-block {
+    margin-bottom: 158px;
   }
 
   .program-title {
@@ -150,7 +148,6 @@
     line-height: 63px;
     margin-bottom: 44px;
   }
-  // Отступ 18.5
 
   .program-list {
     padding-left: 145px;
@@ -196,7 +193,11 @@
 
   .program-wrapper {
     background-image: url(../images/our-program/background-picture2.png);
-    background-position: left 0 bottom 28%;
+    background-position: left 0 bottom 29%;
+  }
+
+  .program-block {
+    margin-bottom: 86px;
   }
 
   .program-title {
@@ -260,14 +261,18 @@
 
 @media (min-width: 1680px) {
   .program {
-    background-image: linear-gradient(to bottom, #111517 79%, #ffffff 21%);
+    background-image: linear-gradient(to bottom, #111517 80%, #ffffff 20%);
     padding: 126px 0 122px;
     position: relative;
   }
 
   .program-wrapper {
     background-image: url(../images/our-program/background-picture3.png);
-    background-position: left 0 bottom 25%;
+    background-position: left 0 bottom 26%;
+  }
+
+  .program-block {
+    margin-bottom: 98px;
   }
 
   .program-title {
@@ -284,7 +289,7 @@
   .program-list::before {
     height: 100vw;
     transform-origin: 100% 0;
-    transform: rotate(-90deg) translate(63px, -350px);
+    transform: rotate(-90deg) translate(63px, -300px);
   }
 
   .semester{
@@ -307,20 +312,125 @@
     line-height: 29px;
     margin-bottom: 38px;
   }
-  // 0
+ 
   .semester-list__title {
     font-size: 21px;
     margin-bottom: 17px;
   }
-  // 4
 
   .semester-list__text{
     font-size: 19px;
     line-height: 29px;
   }
-  // 5
 
   .semester-list__text:not(:last-child) {
     margin-bottom: 10px;
+  }
+}
+
+// Блок Почему нас выбирают
+
+.why-choose-us {
+  // padding-bottom: 340px; Я паддинг вносила.
+  &__title {
+    font-family: $font-montserrat;
+    font-size: 20px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    line-height: 30px;
+    color: #ffffff;
+    margin-bottom: 20px;
+  }
+  &__title-br {
+    display: block;
+  }
+  &__list {
+    counter-reset: item;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 16px 30px 26px 28px;
+  }
+  &__list-item {
+    counter-reset: number 1;
+  }
+  &__list-item::before {
+    display: block;
+    width: 25px;
+    height: 2px;
+    background-color: #ff6b08;
+    content: '';
+    float: left;
+    flex-wrap: wrap;
+    transform: translateY(600%);
+    margin-right: 10px;
+  }
+  &__description::before {
+    display: block;
+    content: counter(item, decimal-leading-zero) ' ';
+    counter-increment: item;
+    font-family: $font-montserrat;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    line-height: 29px;
+    color: #ff6b08;
+  }
+  &__description {
+    font-family: $font-montserrat;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    line-height: 20px;
+    color: #18191d;
+  }
+}
+@media (min-width: 768px) {
+  .why-choose-us {
+    // background-color: #000000; Цвет бекграунда убрала, чтоб твой блок "залез" на цвет моей секции
+    // padding-top: 64px; Отодвигала своим нижним марджином
+    // padding-bottom: 180px; Паддинг боттом указывала)
+    &__title {
+      font-size: 26px;
+      line-height: 33px;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+    &__title-br {
+      display: inline;
+    }
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding: 30px 124px 36px 108px;
+    }
+    &__list-item {
+      width: 200px;
+    }
+  }
+}
+@media (min-width: 1280px) {
+  .why-choose-us {
+    // background-color: #000000; Цвет бекграунда убрала, чтоб твой блок "залез" на цвет моей секции
+    // padding-top: 74px; Отодвигала своим нижним марджином
+    // padding-bottom: 326px; Паддинг боттом указывала)
+    &__title {
+      font-size: 42px;
+      letter-spacing: 2px;
+      line-height: 57px;
+      margin-bottom: 35px;
+    }
+    &__list {
+      padding: 54px 106px 120px 98px;
+    }
+    &__description::before {
+      font-size: 21px;
+    }
+    &__description {
+      font-size: 18px;
+    }
+    &__list-item {
+      width: 270px;
+    }
   }
 }
