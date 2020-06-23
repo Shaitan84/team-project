@@ -164,7 +164,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 24px;
   margin-right: 12px;
   border-top: 2px solid #ff6b08;
   border-left: 2px solid #ff6b08;
@@ -176,8 +175,8 @@
   background-position: right top, right bottom;
 }
 
-.advantages__list-icon-wrapper_last {
-  margin-bottom: 0px;
+.advantages__list-icon-wrapper:not(:last-child) {
+  margin-bottom: 24px;
 }
 
 .advantages__list-icon p {
@@ -205,11 +204,42 @@
   height: 36px;
 }
 
-@media (max-width: 767px) {
-  .btn-consultation {
-    display: none;
+@media (min-width:768px) {
+  .navigation__logo {
+    width: 126px;
   }
 
+  .logotype__fire-svg {
+    width: 28px;
+    height: 38px;
+  }
+
+  // .btn-consultation {
+  //   display: none;
+  // }
+
+  .logotype__hell {
+    font-size: 25px;
+    letter-spacing: 1.25px;
+    line-height: 30px;
+  }
+
+  .logotype__en {
+    font-size: 25px;
+    letter-spacing: 0.75px;
+    line-height: 30px;
+  }
+
+  .logotype__hell-rus,
+  .logotype__en-rus {
+    font-size: 9px;
+    line-height: 11px;
+    letter-spacing: 0.96px;
+  }
+}
+
+
+@media (max-width: 767px) {
   // .header__menu {
   //   position: fixed;
   //   top: 0;
