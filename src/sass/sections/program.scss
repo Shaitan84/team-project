@@ -10,6 +10,12 @@
   overflow: hidden;
 }
 
+// .program-block {
+//   margin-bottom: 44px;
+// }
+
+// Марджин боттом чтоб отодвинуть блок почему нас выбирают
+
 .program-title {
   font-size: 20px;
   letter-spacing: 1px;
@@ -121,7 +127,6 @@
 
 // Здесь располагается блок "Почему нас выбирают. " Этот блок входит в секцию program.Я ей фон задала. Посмотри внимательно вложенность. Падинг боттом секции задала 70 пикселей
 
-// Медиа
 
 @media (max-width: 767px) {
   .program-title {
@@ -187,10 +192,10 @@
   .program {
     background-image: linear-gradient(to bottom, #111517 92%, #ffffff 8%);
     padding: 78px 0 90px;
-    position: relative;
   }
-  // сделала релейтив чтоб к ней привязать бифор линию
+
   .program-wrapper {
+    background-image: url(../images/our-program/background-picture2.png);
     background-position: left 0 bottom 28%;
   }
 
@@ -200,28 +205,23 @@
     line-height: 63px;
     margin-bottom: 90px;
   }
-
   // 10.5
 
   .program-list {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
     padding-left: 0;
-    position: static;
-    // MARGIN-BOTTOM????
   }
-
-  // сделала статик чтою отвязать бифор
 
   .program-list::before {
-    display: block;
-    height: 100vh;
-    transform-origin: left;
-    transform: rotate(90deg);
+    height: 100vw;
+    transform-origin: 100% 0;
+    transform: rotate(-90deg) translate(42px, -150px);
   }
 
-  // Не могу поднять линию и расположить на ширишу всего экрана
+  .semester{
+    width: 230px;
+  }
 
   .semester:not(:last-child) {
     margin-bottom: 0;
@@ -233,6 +233,29 @@
     border-radius: 8px;
     transform: translate(0, -48px);
   }
+
+  .semester-list__title-main {
+    font-size: 19px;
+    margin-bottom: 38px;
+  }
+  // 5
+
+  .semester-list__title {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+  // 5
+
+
+  .semester-list__text{
+    font-size: 19px;
+    line-height: 29px;
+  }
+  // 5
+
+  .semester-list__text:not(:last-child) {
+    margin-bottom: 10px;
+  }
 }
 
 @media (min-width: 1680px) {
@@ -243,6 +266,7 @@
   }
 
   .program-wrapper {
+    background-image: url(../images/our-program/background-picture3.png);
     background-position: left 0 bottom 25%;
   }
 
@@ -253,12 +277,19 @@
 
   .program-list {
     display: flex;
-    flex-wrap: wrap;
     padding-left: 0;
-    // MARGIN-BOTTOM????
+    justify-content: space-between;
   }
 
-  // TimeLine СДЕЛАТЬ!
+  .program-list::before {
+    height: 100vw;
+    transform-origin: 100% 0;
+    transform: rotate(-90deg) translate(63px, -350px);
+  }
+
+  .semester{
+    width: 258px;
+  }
 
   .semester:not(:last-child) {
     margin-bottom: 0;
@@ -268,5 +299,28 @@
     height: 20px;
     border-radius: 10px;
     transform: translate(0, -70px);
+  }
+
+  .semester-list__title-main {
+    font-size: 24px;
+    letter-spacing: 3px;
+    line-height: 29px;
+    margin-bottom: 38px;
+  }
+  // 0
+  .semester-list__title {
+    font-size: 21px;
+    margin-bottom: 17px;
+  }
+  // 4
+
+  .semester-list__text{
+    font-size: 19px;
+    line-height: 29px;
+  }
+  // 5
+
+  .semester-list__text:not(:last-child) {
+    margin-bottom: 10px;
   }
 }
