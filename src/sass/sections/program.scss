@@ -20,8 +20,8 @@
   font-size: 20px;
   letter-spacing: 1px;
   line-height: 33px;
-  color: #ffffff;
-  font-family: 'Montserrat';
+  color: $white-color;
+  font-family: $font-montserrat;
   font-weight: 800;
   margin-bottom: 30px;
 }
@@ -57,7 +57,7 @@
     width: 10px;
     height: 10px;
     border-radius: 5px;
-    background-color: #ff6b08;
+    background-color: $secondary-color;
     position: absolute;
     transform: translate(-34px, 10px);
   }
@@ -67,8 +67,8 @@
   font-size: 15px;
   letter-spacing: 2px;
   line-height: 29px;
-  color: #ffffff;
-  font-family: 'Montserrat';
+  color: $white-color;
+  font-family: $font-montserrat;
   font-weight: 700;
   text-transform: uppercase;
   text-align: top;
@@ -83,8 +83,8 @@
   font-size: 13px;
   letter-spacing: 1px;
   line-height: 29px;
-  color: #ff6b08;
-  font-family: 'Montserrat';
+  color: $secondary-color;
+  font-family: $font-montserrat;
   font-weight: 500;
   padding-left: 38px;
   position: relative;
@@ -95,7 +95,7 @@
     content: '';
     width: 25px;
     height: 2px;
-    background-color: #ff6b08;
+    background-color: $secondary-color;
     transform-origin: left;
     transform: rotate(180deg);
     transform: translate(-38px, 13px);
@@ -108,7 +108,7 @@
   letter-spacing: 1px;
   line-height: 20px;
   color: #858585;
-  font-family: 'Montserrat';
+  font-family: $font-montserrat;
   font-weight: 400;
 
   &:not(:last-child) {
@@ -333,7 +333,7 @@
     font-weight: 800;
     letter-spacing: 1px;
     line-height: 30px;
-    color: #ffffff;
+    color: $white-color;
     margin-bottom: 20px;
   }
   &__title-br {
@@ -341,7 +341,7 @@
   }
   &__list {
     counter-reset: item;
-    background-color: #ffffff;
+    background-color: $white-color;
     margin: 0;
     padding: 16px 30px 26px 28px;
   }
@@ -352,7 +352,7 @@
     display: block;
     width: 25px;
     height: 2px;
-    background-color: #ff6b08;
+    background-color: $secondary-color;
     content: '';
     float: left;
     flex-wrap: wrap;
@@ -368,7 +368,7 @@
     font-weight: 500;
     letter-spacing: 1px;
     line-height: 29px;
-    color: #ff6b08;
+    color: $secondary-color;
   }
   &__description {
     font-family: $font-montserrat;
