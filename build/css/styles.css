@@ -1530,6 +1530,7 @@ body {
   margin-bottom: 58px; }
 
 .copyrights {
+  width: 100%;
   height: 74px;
   background-color: black; }
 
@@ -1691,5 +1692,7 @@ body {
     height: 70px;
     font-size: 14px;
     font-weight: bold;
-    text-align: center; } }
+    text-align: center; }
+  .copyrights__text {
+    margin-left: 100px; } }
 
