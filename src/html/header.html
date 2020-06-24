@@ -1,5 +1,5 @@
 <header class="header">
-  <div class="container header-shadow">
+  <div class="container">
     <nav class="navigation">
       <div class="navigation__logo">
         <a href="#" class="logotype">
@@ -13,16 +13,50 @@
           <span class="logotype__en-rus">английский</span>
         </a>
       </div>
+      <div class="header__menu">
+        <ul class="header__list">
+          <li class="header__list-item">
+            <a href="#" class="header__link">
+              программа обучения
+            </a>
+          </li>
+          <li class="header__list-item">
+            <a href="#" class="header__link">
+              о нас
+            </a>
+          </li>
+          <li class="header__list-item">
+            <a href="#" class="header__link">
+              варианты обучения
+            </a>
+          </li>
+          <li class="header__list-item">
+            <a href="#" class="header__link">
+              контакты
+            </a>
+          </li>
+        </ul>
+      </div>
+      <button class="btn-consultation">консультация по телефону</button>
+      <div class="header_burger">
+        <span>
+        </span>
+      </div>
     </nav>
     <div class="about-us">
-      <h3 class="about-us__title">Комплексная подготовка к ВНО
-        <span>по английскому языку</span></h3>
-      <p class="about-us__heavy">Просто не будет.</p>
-      <p class="about-us__plus25">Но ты гарантировано наберешь <span class="about-us__plus25info">+25 баллов</span></p>
-      <button class="btn-freelesson">хочу на бесплатное занятие</button>
+      <div class="about-us__wrapper">
+        <h3 class="about-us__title">Комплексная подготовка к ВНО
+          <span>по английскому языку</span></h3>
+        <p class="about-us__heavy">Просто не будет.</p>
+        <p class="about-us__plus25">Но ты гарантировано наберешь <span class="about-us__plus25info">+25 баллов</span>
+        </p>
+        <button class="btn-freelesson">хочу на бесплатное занятие</button>
+      </div>
+      <div class="about-us__foto">
+        <img srcset="./images/header-foto/group1-min.png 839w, ./images/header-foto/group1@2x-min.png 1677w"
+          class="about-us__teacher" src="./images/header-foto/group1.png" height="717" sizes="839px" alt="photo-techer">
+      </div>
     </div>
-    <img srcset="./images/header-foto/group1-min.jpg 215w, ./images/header-foto/group1@2x-min.jpg 430w"
-      class="about-us__teacher" src="./images/header-foto/group1.jpg" height="185" sizes="215px" alt="photo-techer">
   </div>
   <div class="advantages container">
     <ul class="advantages__list">
@@ -50,7 +84,7 @@
       </li>
       <li class="advantages__list-item">
         <div class="advantages__list-icon">
-          <div class="advantages__list-icon-wrapper">
+          <div class="advantages__list-icon-wrapper .advantages__list-icon-wrapper_last">
             <title>insuarence</title>
             <svg class="advantages__list-icon advantages__list-icon_insuarence">
               <use href="./images/icons/header/sprite.svg#icon-insuarance">
