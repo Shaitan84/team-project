@@ -87,7 +87,6 @@
   display: none;
 }
 
-
 .about-us__title {
   color: #18191d;
   font-family: $font-montserrat;
@@ -220,7 +219,7 @@
   height: 36px;
 }
 
-@media (min-width:768px) {
+@media (min-width: 768px) {
   .header {
     background-image: url(../images/header-foto/shadow-tablet.png);
     background-repeat: no-repeat;
@@ -306,6 +305,12 @@
     width: 200px;
   }
 }
+
+/*@media (max-width: 1279px) {
+  .header__menu {
+    display: none;
+  }
+}*/
 
 @media (min-width: 1280px) {
   .header {
@@ -396,14 +401,18 @@
 }
 
 @media (max-width: 767px) {
-  // .header__menu {
-  //   position: fixed;
-  //   top: 0;
-  //   left: 0;
-  //   width: 100%;
-  //   height: 100%;
-  //   background-color: rgba(24, 25, 29, 0.5);
-  // }
+  .header__menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(24, 25, 29, 0.5);
+  }
+
+  .header-menu__list {
+    display: block;
+  }
 }
 
 @media (max-width: 1279px) {
@@ -433,19 +442,11 @@
     left: 0;
   }
 
-
   .header_burger:before {
     top: 0;
   }
 
   .header_burger:after {
     bottom: 0;
-  }
-
-}
-
-@media (max-width: 1279px) {
-  .header__menu {
-    display: none;
   }
 }
