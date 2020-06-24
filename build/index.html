@@ -14,7 +14,7 @@
 
 <body>
   <header class="header">
-    <div class="conteiner">
+    <div class="container">
       <nav class="navigation">
         <div class="navigation__logo">
           <a href="#" class="logotype">
@@ -28,109 +28,475 @@
             <span class="logotype__en-rus">английский</span>
           </a>
         </div>
+        <div class="header__menu">
+          <ul class="header__list">
+            <li class="header__list-item">
+              <a href="#" class="header__link">
+                программа обучения
+              </a>
+            </li>
+            <li class="header__list-item">
+              <a href="#" class="header__link">
+                о нас
+              </a>
+            </li>
+            <li class="header__list-item">
+              <a href="#" class="header__link">
+                варианты обучения
+              </a>
+            </li>
+            <li class="header__list-item">
+              <a href="#" class="header__link">
+                контакты
+              </a>
+            </li>
+          </ul>
+        </div>
+        <button class="btn-consultation">консультация по телефону</button>
+        <div class="header_burger">
+          <span>
+          </span>
+        </div>
       </nav>
+      <div class="about-us">
+        <div class="about-us__wrapper">
+          <h3 class="about-us__title">Комплексная подготовка к ВНО
+            <span>по английскому языку</span></h3>
+          <p class="about-us__heavy">Просто не будет.</p>
+          <p class="about-us__plus25">Но ты гарантировано наберешь <span class="about-us__plus25info">+25 баллов</span>
+          </p>
+          <button class="btn-freelesson">хочу на бесплатное занятие</button>
+        </div>
+        <div class="about-us__foto">
+          <img srcset="./images/header-foto/group1-min.png 839w, ./images/header-foto/group1@2x-min.png 1677w"
+            class="about-us__teacher" src="./images/header-foto/group1.png" height="717" sizes="839px" alt="photo-techer">
+        </div>
+      </div>
+    </div>
+    <div class="advantages container">
+      <ul class="advantages__list">
+        <li class="advantages__list-item">
+          <div class="advantages__list-icon">
+            <div class="advantages__list-icon-wrapper">
+              <title>student</title>
+              <svg class="advantages__list-icon advantages__list-icon_student">
+                <use href="./images/icons/header/sprite.svg#icon-student">
+              </svg>
+            </div>
+            <p>Адаптированная авторская программа ВНО</p>
+          </div>
+        </li>
+        <li class="advantages__list-item">
+          <div class="advantages__list-icon advantages__list-icon_tel">
+            <div class="advantages__list-icon-wrapper">
+              <title>mobile</title>
+              <svg class="advantages__list-icon advantages__list-icon_mobile">
+                <use href="./images/icons/header/sprite.svg#icon-mobile-learning">
+              </svg>
+            </div>
+            <p>Современные методики обучения</p>
+          </div>
+        </li>
+        <li class="advantages__list-item">
+          <div class="advantages__list-icon advantages__list-icon_baks">
+            <div class="advantages__list-icon-wrapper .advantages__list-icon-wrapper_last">
+              <title>insuarence</title>
+              <svg class="advantages__list-icon advantages__list-icon_insuarence">
+                <use href="./images/icons/header/sprite.svg#icon-insuarance">
+              </svg>
+            </div>
+            <p>Финансовая гарантия результата</p>
+          </div>
+        </li>
+      </ul>
     </div>
   </header>
   <main>
+    <section class="major-issues">
+        <div class="container">
+          <h2 class="major-issues__title">Главные проблемы учеников
+            <span class="major-issues__title-br">на English ВНО,</span>
+            <span class="major-issues__title-br">которые мы</span>
+            <span class="major-issues__title-span">помогаем</span> решить</h2>
+    
+          <div class="major-issues__list-wraper">
+            <ul class="major-issues__list">
+              <div>
+                <li class="major-issues__list-item">
+                  <p class="major-issues__description">Незнание грамматики</p>
+                </li>
+              </div>
+              <div>
+                <li class="major-issues__list-item">
+                  <p class="major-issues__description">Неумение воспринимать устную английскую речь</p>
+                </li>
+              </div>
+              <div>
+                <li class="major-issues__list-item">
+                  <p class="major-issues__description">Скупой словарный запас для написания сочинения</p>
+                </li>
+              </div>
+              <div>
+                <li class="major-issues__list-item">
+                  <p class="major-issues__description">Подготовка в одиночку</p>
+                </li>
+              </div>
+              <div>
+                <li class="major-issues__list-item">
+                  <p class="major-issues__description">Отсутствие единого ресурса знаний</p>
+                </li>
+              </div>
+              <div>
+                <li class="major-issues__list-item">
+                  <p class="major-issues__description">Недостаток самоорганизации и лень</p>
+                </li>
+              </div>
+            </ul>
+          </div>
+        </div>
+      </section>
+    <section class="how-we-do how-we-do__section">
+        <div class="container">
+            <h2 class="how-we-do__title">Как мы это делаем</h2>
+            <ul class="how-we-do__list">
+                <li class="how-we-do__list-item">
+                    <svg class="how-to-do__list-icon how-to-do__list-icon_study">
+                        <title>Audiobook icon</title>
+                        <use href="./images/how-to-do/how-to-do-sprite.svg#icon-study"></use>
+                    </svg>
+                    <h3 class="how-we-do__list-item-title">Адаптированная программа подготовки к ВНО</h3>
+                    <p class="how-we-do__list-item-description">Ты будешь изучать грамматику
+                        и лексику одновременно.
+                        И ты научишься писать сочинения.</p>
+                </li>
+                <li class="how-we-do__list-item">
+                    <svg class="how-to-do__list-icon how-to-do__list-icon_mobile-learning">
+                        <title>Mobile learning icon</title>
+                        <use href="./images/how-to-do/how-to-do-sprite.svg#icon-mobile-learning"></use>
+                    </svg>
+                    <h3 class="how-we-do__list-item-title">Аудиторное
+                        и онлайн-обучение</h3>
+                    <p class="how-we-do__list-item-description">Учитель поможет не только
+                        в аудитории, но и во время домашней подготовки. Родители могут участвовать в чате при желании.
+                    </p>
+                </li>
+                <li class="how-we-do__list-item">
+                    <svg class="how-to-do__list-icon how-to-do__list-icon_open-book">
+                        <title>Open book icon</title>
+                        <use href="./images/how-to-do/how-to-do-sprite.svg#icon-open-book"></use>
+                    </svg>
+                    <h3 class="how-we-do__list-item-title">Привычка читать
+                        на английском языке</h3>
+                    <p class="how-we-do__list-item-description">Статьи из источников, которые используются при
+                        разработке
+                        настоящего ВНО, будут приходить на телефон дважды в неделю.
+                    </p>
+                </li>
+                <li class="how-we-do__list-item">
+                    <svg class="how-to-do__list-icon how-to-do__list-icon_global-communication">
+                        <title>Global communication icon</title>
+                        <use href="./images/how-to-do/how-to-do-sprite.svg#icon-global-communication"></use>
+                    </svg>
+                    <h3 class="how-we-do__list-item-title">Психологическая поддержка</h3>
+                    <p class="how-we-do__list-item-description">Мы научим тебя методикам прохождения тестирований,
+                        умению
+                        планировать свою подготовку уверенности в себе
+                    </p>
+                </li>
+                <li class="how-we-do__list-item">
+                    <svg class="how-to-do__list-icon how-to-do__list-icon_female-student">
+                        <title>Female student icon</title>
+                        <use href="./images/how-to-do/how-to-do-sprite.svg#icon-female-student"></use>
+                    </svg>
+                    <h3 class="how-we-do__list-item-title">Обучение по автроским пособиям</h3>
+                    <p class="how-we-do__list-item-description">Тебе не нужно тратить время на самостоятельный поиск
+                        материала и ничего покупать дополнительно. Мы составили 2 пособия
+                        для тебя.</p>
+                </li>
+                <li class="how-we-do__list-item">
+                    <svg class="how-to-do__list-icon how-to-do__list-icon_audio-book">
+                        <title>Book icon</title>
+                        <use href="./images/how-to-do/how-to-do-sprite.svg#icon-audio-book"></use>
+                    </svg>
+                    <h3 class="how-we-do__list-item-title">Умение воспринивать устную английскую речь</h3>
+                    <p class="how-we-do__list-item-description">“F.R.I.E.N.D.S” тебе не помогут.
+                        Ты будешь регулярно слушать и разбирать аудиозаписи в соответствии с изучаемой лексикой.</p>
+                </li>
+            </ul>
+        </div>
+    </section>
     <section class="program">
-            <div class="program-wrapper">
-                <div class="container">
-                    <h2 class="program-title">Наша программа</h2>
-                    <ul class="program-list">
-                        <li class="semester">
-                            <h3 class="semester-list__title-main">1 семестр</h3>
-                            <ul class="semester-list">
-                                <li class="semester-list__item">
-                                    <h4 class="semester-list__title">Grammar</h4>
-                                    <p class="semester-list__text">Nouns & Articles</p>
-                                    <p class="semester-list__text">Adjectives & Adverb</p>
-                                </li>
-                                <li class="semester-list__item">
-                                    <h4 class="semester-list__title">Vocabulary</h4>
-                                    <p class="semester-list__text">Family & Relations</p>
-                                    <p class="semester-list__text">People & Society</p>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="semester">
-                            <h3 class="semester-list__title-main">2 семестр</h3>
-                            <ul class="semester-list">
-                                <li class="semester-list__item">
-                                    <h4 class="semester-list__title">Grammar</h4>
-                                    <p class="semester-list__text">Pronouns</p>
-                                    <p class="semester-list__text">Active Voice</p>
-                                    <p class="semester-list__text">Passive Voice</p>
-                                </li>
-                                <li class="semester-list__item">
-                                    <h4 class="semester-list__title">Vocabulary</h4>
-                                    <p class="semester-list__text">Home</p>
-                                    <p class="semester-list__text">School</p>
-                                    <p class="semester-list__text">Work</p>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="semester">
-                            <h3 class="semester-list__title-main">3 семестр</h3>
-                            <ul class="semester-list">
-                                <li class="semester-list__item">
-                                    <h4 class="semester-list__title">Grammar</h4>
-                                    <p class="semester-list__text">Modal verbs</p>
-                                    <p class="semester-list__text">Infinitive</p>
-                                    <p class="semester-list__text">Gerund</p>
-                                    <p class="semester-list__text">Participle: 1, 2</p>
-                                </li>
-                                <li class="semester-list__item">
-                                    <h4 class="semester-list__title">Vocabulary</h4>
-                                    <p class="semester-list__text">Travel & Tourism</p>
-                                    <p class="semester-list__text">Culture & Free Time</p>
-                                    <p class="semester-list__text">Sport</p>
-                                </li>
-                                <li class="semester-list__item">
-                                    <h4 class="semester-list__title">Writing</h4>
-                                    <p class="semester-list__text">Informal Letter</p>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="semester">
-                            <h3 class="semester-list__title-main">4 семестр</h3>
-                            <ul class="semester-list">
-                                <li class="semester-list__item">
-                                    <h4 class="semester-list__title">Grammar</h4>
-                                    <p class="semester-list__text">Clauses: Conditional</p>
-                                    <p class="semester-list__text">and Wishes</p>
-                                    <p class="semester-list__text">Direct / Reported speech</p>
-                                    <p class="semester-list__text">Preposition</p>
-                                    <p class="semester-list__text">Conjunction</p>
-                                    <p class="semester-list__text">Numeral</p>
-                                </li>
-                                <li class="semester-list__item">
-                                    <h4 class="semester-list__title">Vocabulary</h4>
-                                    <p class="semester-list__text">Healthy Living</p>
-                                    <p class="semester-list__text">Nature & Environment</p>
-                                    <p class="semester-list__text">Money</p>
-                                </li>
-                                <li class="semester-list__item">
-                                    <h4 class="semester-list__title">Writing</h4>
-                                    <p class="semester-list__text">Formal Lette</p>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="semester">
-                            <h3 class="semester-list__title-main">5 семестр</h3>
-                            <ul class="semester-list">
-                                <li class="semester-list__item">
-                                    <h4 class="semester-list__title semester-list__title--block"><span class="visually-hidden">Test</span></h4>
-                                    <!-- нужно спрятать текст в заголовке 5 семестра -->
-                                    <p class="semester-list__text">Revision</p>
-                                    <p class="semester-list__text">Tests</p>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
+      <div class="program-wrapper">
+        <div class="program-block container">
+          <h2 class="program-title">Наша программа</h2>
+          <ul class="program-list">
+            <li class="semester">
+              <h3 class="semester-list__title-main">1 семестр</h3>
+              <ul class="semester-list">
+                <li class="semester-list__item">
+                  <h4 class="semester-list__title">Grammar</h4>
+                  <p class="semester-list__text">Nouns & Articles</p>
+                  <p class="semester-list__text">Adjectives & Adverb</p>
+                </li>
+                <li class="semester-list__item">
+                  <h4 class="semester-list__title">Vocabulary</h4>
+                  <p class="semester-list__text">Family & Relations</p>
+                  <p class="semester-list__text">People & Society</p>
+                </li>
+              </ul>
+            </li>
+            <li class="semester">
+              <h3 class="semester-list__title-main">2 семестр</h3>
+              <ul class="semester-list">
+                <li class="semester-list__item">
+                  <h4 class="semester-list__title">Grammar</h4>
+                  <p class="semester-list__text">Pronouns</p>
+                  <p class="semester-list__text">Active Voice</p>
+                  <p class="semester-list__text">Passive Voice</p>
+                </li>
+                <li class="semester-list__item">
+                  <h4 class="semester-list__title">Vocabulary</h4>
+                  <p class="semester-list__text">Home</p>
+                  <p class="semester-list__text">School</p>
+                  <p class="semester-list__text">Work</p>
+                </li>
+              </ul>
+            </li>
+            <li class="semester">
+              <h3 class="semester-list__title-main">3 семестр</h3>
+              <ul class="semester-list">
+                <li class="semester-list__item">
+                  <h4 class="semester-list__title">Grammar</h4>
+                  <p class="semester-list__text">Modal verbs</p>
+                  <p class="semester-list__text">Infinitive</p>
+                  <p class="semester-list__text">Gerund</p>
+                  <p class="semester-list__text">Participle: 1, 2</p>
+                </li>
+                <li class="semester-list__item">
+                  <h4 class="semester-list__title">Vocabulary</h4>
+                  <p class="semester-list__text">Travel & Tourism</p>
+                  <p class="semester-list__text">Culture & Free Time</p>
+                  <p class="semester-list__text">Sport</p>
+                </li>
+                <li class="semester-list__item">
+                  <h4 class="semester-list__title">Writing</h4>
+                  <p class="semester-list__text">Informal Letter</p>
+                </li>
+              </ul>
+            </li>
+            <li class="semester">
+              <h3 class="semester-list__title-main">4 семестр</h3>
+              <ul class="semester-list">
+                <li class="semester-list__item">
+                  <h4 class="semester-list__title">Grammar</h4>
+                  <p class="semester-list__text">Clauses: Conditional</p>
+                  <p class="semester-list__text">and Wishes</p>
+                  <p class="semester-list__text">Direct / Reported speech</p>
+                  <p class="semester-list__text">Preposition</p>
+                  <p class="semester-list__text">Conjunction</p>
+                  <p class="semester-list__text">Numeral</p>
+                </li>
+                <li class="semester-list__item">
+                  <h4 class="semester-list__title">Vocabulary</h4>
+                  <p class="semester-list__text">Healthy Living</p>
+                  <p class="semester-list__text">Nature & Environment</p>
+                  <p class="semester-list__text">Money</p>
+                </li>
+                <li class="semester-list__item">
+                  <h4 class="semester-list__title">Writing</h4>
+                  <p class="semester-list__text">Formal Lette</p>
+                </li>
+              </ul>
+            </li>
+            <li class="semester">
+              <h3 class="semester-list__title-main">5 семестр</h3>
+              <ul class="semester-list">
+                <li class="semester-list__item">
+                  <h4 class="semester-list__title semester-list__title--block"><span class="visually-hidden">Test</span>
+                  </h4>
+                  <p class="semester-list__text">Revision</p>
+                  <p class="semester-list__text">Tests</p>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <!-- Почему нас выбирают -->
+    
+        <div class="why-choose-us">
+          <div class="container">
+            <h2 class="why-choose-us__title">Почему нас <span class="why-choose-us__title-br">выбирают</span> </h2>
+            <div class="why-choose-us__list-wraper">
+              <ul class="why-choose-us__list">
+                <div>
+                  <li class="why-choose-us__list-item">
+                    <p class="why-choose-us__description">Обучение в малых командах</p>
+                  </li>
+                </div>
+                <div>
+                  <li class="why-choose-us__list-item">
+                    <p class="why-choose-us__description">Визуализированные конспекты</p>
+                  </li>
+                </div>
+                <div>
+                  <li class="why-choose-us__list-item">
+                    <p class="why-choose-us__description">Каждое занятие имеет цель и конкретный результат</p>
+                  </li>
+                </div>
+                <div>
+                  <li class="why-choose-us__list-item">
+                    <p class="why-choose-us__description">Реальные результаты преподавателя</p>
+                  </li>
+                </div>
+                <div>
+                  <li class="why-choose-us__list-item">
+                    <p class="why-choose-us__description">Программа курса соответствует требованиям МОН Украины</p>
+                  </li>
+                </div>
+                <div>
+                  <li class="why-choose-us__list-item">
+                    <p class="why-choose-us__description">Набор команд по уровням знаний</p>
+                  </li>
+                </div>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+    <section class="slider">
+        <h2 class="slider__title">Отзывы <span class="slider__title_our">наших</span> выпускников</h2>
+        <div class="slider__wrapper">
+            <div class="slider__wrapper_box slider__wrapper_box_joint">
+                <div class="slider__wrapper_box_img slider__wrapper_box_joint">
+                    <div class="slider__wrapper_box_photo"></div>
+                    <div class="slider__wrapper_box_icon"></div>
+                </div>
+                <div class="slider__wrapper_box_text">
+                    <h3 class="slider__wrapper_box_text_name">Тоня Кучеровская</h3>
+                    <p class="slider__wrapper_box_text_info">Выпуск 2015-го года,  Національний університет біоресурсів і природокористування України</p>
+                    <p class="slider__wrapper_box_text_review">За короткий час занять з Оленою я опанувала граматику і поповнила свій зовсім пустий словниковий запас. З першого ж заняття я зрозуміла, що знаходжуся у своїй тарілці<span class="slider__wrapper_box_text_review_none">. Ми з Оленою стали друзями, тому що її справді хвилювала моя успішність. Вона стала для мене авторитетом, проте я не тремтіла на уроках, маючи страх зробити найменшу помилку. Зараз я можу похизуватись тим, що я студен</span>... <span class="slider__wrapper_box_text_review_continuation">Читать дальше</span>  </p> 
                 </div>
             </div>
-        <!-- Здесь располагается блок "Почему нас выбирают. " -->
+        </div>
+        <div class="slider__arrow">
+            <button class="slider__arrow_left slider__arrow_left_joint"></button>
+            <button class="slider__arrow_right slider__arrow_left_joint"></button>
+        </div>
+        <ul class="slider__list">
+            <li class="slider__list_item"><img srcset="/images/2.png 380w, /images/2@2x.png 760w" sizes="380px" src="/images/2.png" alt=""></li>
+            <li class="slider__list_item"><img srcset="/images/3.png 380w, /images/3@2x.png 760w" sizes="380px" src="/images/3.png" alt=""></li>
+            <li class="slider__list_item"><img srcset="/images/4.png 380w, /images/4@2x.png 760w" sizes="380px" src="/images/4.png" alt=""></li>
+            <li class="slider__list_item slider__list_item_hidden"><img srcset="/images/5.png 380w, /images/5@2x.png 760w" sizes="380px" src="/images/5.png" alt=""></li>
+            <li class="slider__list_item slider__list_item_hidden"><img srcset="/images/6.png 380w, /images/6@2x.png 760w" sizes="380px" src="/images/6.png" alt=""></li>
+            <li class="slider__list_item slider__list_item_hidden"><img srcset="/images/7.png 380w, /images/7@2x.png 760w" sizes="380px" class="slider__list_item_img" src="/images/7.png" alt=""></li>
+            <li class="slider__list_item slider__list_item_hidden"><img srcset="/images/8.png 380w, /images/8@2x.png 760w" sizes="380px" src="/images/8.png" alt=""></li>
+        </ul>   
     </section>
+
+    <!-- //= ./html/why-choose-us.html Код этого блока находиться в документе program.html-->
+    <section class="we-guarantee">
+        <div class="container">
+            <h2 class="we-guarantee__title">Мы гарантируем</h2>
+        </div>
+        <div class="we-guarantee__list-wraper">
+            <div class="container">
+                <ul class="we-guarantee__list">
+                    <div class="we-guarantee__list-item-wraper">
+                        <li class="we-guarantee__list-item">
+                            <p class="we-guarantee__description">
+                                Ты сдашь ВНО минимум на 25 баллов лучше, чем на первом пробном
+                                тестировании. Иначе мы вернем деньги.<span class="we-guarantee__br-color">*</span>
+                            </p>
+                        </li>
+                    </div>
+                    <div class="we-guarantee__list-item-wraper">
+                        <li class="we-guarantee__list-item">
+                            <p class="we-guarantee__description">
+                                Ты научишься писать сочинения минимум на 10 баллов из 14.
+                                <span class="we-guarantee__br-color">
+                                    В товремя как 20% учеников получили за сочинение 0.
+                                </span>
+                            </p>
+                        </li>
+                    </div>
+                    <div class="we-guarantee__list-item-wraper">
+                        <li class="we-guarantee__list-item">
+                            <p class="we-guarantee__description">
+                                Ты будешь заниматься в своем районе. Мы выберем место проведения
+                                занятий после формирования команд.
+                            </p>
+                        </li>
+                    </div>
+                    <div class="we-guarantee__list-item-wraper">
+                        <li class="we-guarantee__list-item">
+                            <p class="we-guarantee__description">
+                                Команды будут сформированы, исходя из начального уровня учеников.
+                                Мы учитываем особенности каждого ученика.
+                            </p>
+                        </li>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="contacts ">
+        <div class="background">
+            <div class="form container">
+                <h2 class="contact-title">
+                    Регистрация на <span class="orange">бесплатную</span> телефонную
+                    <span class="orange">консультацию</span>
+                    по нюансам ЗНО <p class="break-word">по английскому языку</p>
+                </h2>
+                <h3 class="contact-subtitle">
+                    Оставь заявку на участие в <span class="orange">бесплатном занятии.</span>
+                    <p class="break-word">С вами свяжется
+                        консультант
+                        и ответит на вопросы.</p>
+                </h3>
+                <form action="#" method="GET" class="contact-form">
+                    <div class="input-common">
+                        <ul>
+                            <li>
+                                <input name="user_name" type=" text" class="input" placeholder="Имя*" required
+                                    minlength="2" />
+                            </li>
+                            <li>
+                                <input name="user_phone" type="tel" class="input" placeholder="Телефон*" pattern="[0-9]{10}"
+                                    required />
+                            </li>
+                        </ul>
+                    </div>
+    
+                    <button type="submit" class="contact-form-button">
+                        хочу на бесплатное занятие
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="contacts container">
+            <ul class="contacts-list">
+                <li class="contacts-list__item">
+                    <a href="tel:+38 (000) 000 00 00" class="phone-number">+38 (000) 000 00 00</a>
+                </li>
+                <li class="contacts-list__item">
+                    <a href="https://www.instagram.com/instagram/" target="_blank" title="New Window" class="instagram"></a>
+                </li>
+                <li class="contacts-list__item logo"></li>
+            </ul>
+        </div>
+        <div class="copyrights">
+            <div class="container">
+                <a href="#" class="copyrights__text">@ Все права защищены, 2019</a>
+            </div>
+        </div>
+    
+    
+    </footer>
   </main>
   <!-- Сюда будет всталена ссылка на файл скриптов -->
   <!-- inject:js -->

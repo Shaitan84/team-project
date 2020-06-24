@@ -1,0 +1,107 @@
+<section class="lecturer">
+  <div class="container">
+    <h2 class="lecturer__head">Преподаватель</h2>
+    <div class="lecturer-info-wrap">
+      <picture class="lecturer__photo">
+        <source
+          srcset="
+            ./images/lecturer/lecturer-desktop.jpg    490w,
+            ./images/lecturer/lecturer-desktop@2x.jpg 980w
+          "
+          sizes="490px"
+          media="(min-width: 1280px)"
+        />
+        <source
+          srcset="
+            ./images/lecturer/lecturer-tablet.jpg    246w,
+            ./images/lecturer/lecturer-tablet@2x.jpg 492w
+          "
+          sizes="246px"
+          media="(min-width: 768px)"
+        />
+        <source
+          srcset="
+            ./images/lecturer/lecturer-mobile.jpg    280w,
+            ./images/lecturer/lecturer-mobile@2x.jpg 560w
+          "
+          sizes="280px"
+          media="(min-width: 320px)"
+        />
+
+        <img
+          class="lecturer__photo--default"
+          src="./images/lecturer/lecturer-mobile.jpg"
+          alt="Елена Морева"
+        />
+      </picture>
+
+      <div class="wrap">
+        <h3 class="lecturer__secondary-head">Елена Морева</h3>
+
+        <ul class="lecturer__features">
+          <li class="lecturer__features-item">
+            <div class="lecturer__icon--wrap">
+              <svg class="lecturer__icon">
+                <use href="./images/icons/sprite.svg#check"></use>
+              </svg>
+            </div>
+            <p class="lecturer__description">
+              Опыт подготовки учеников к ВНО - 6 лет
+            </p>
+          </li>
+          <li class="lecturer__features-item">
+            <div class="lecturer__icon--wrap">
+              <svg class="lecturer__icon">
+                <use href="./images/icons/sprite.svg#check"></use>
+              </svg>
+            </div>
+            <p class="lecturer__description">
+              Собственный результат сдачи ВНО - 197 баллов 2 года подряд
+            </p>
+          </li>
+          <li class="lecturer__features-item">
+            <div class="lecturer__icon--wrap">
+              <svg class="lecturer__icon">
+                <use href="./images/icons/sprite.svg#check"></use>
+              </svg>
+            </div>
+            <p class="lecturer__description">
+              Сдала на отлично международный аналог ВНО - Кембриджский PET
+              (Preliminary English Test)
+            </p>
+          </li>
+        </ul>
+        <ul class="lecturer__progress">
+          <li class="lecturer__progress-item">
+            <p class="lecturer__description--progress">
+              Высшее образование получила в Институте международных отношений
+              НАУ по специальности переводчик - аналитик.
+            </p>
+          </li>
+          <li class="lecturer__progress-item">
+            <p class="lecturer__description--progress">
+              В свободное время проходит курсы от лучших университетов мира по
+              эффективному преподаванию и методикам написания сочинений.
+            </p>
+          </li>
+          <li class="lecturer__progress-item">
+            <p class="lecturer__description--progress">
+              В числе пройденных: English Grammar and Essay Writing (Berkeley),
+              English Grammar&Style (The University of Queesland), How to Write
+              an Essay (Berkeley), Academic and Business Writing (Berkeley), The
+              Art of Teaching (GEMS education), Powerful Tools for Teaching and
+              Learning (University of Houston).
+            </p>
+          </li>
+          <li class="lecturer__progress-item">
+            <a
+              href="#certificate"
+              class="lecturer__progress-item lecturer__progress--link popup-link"
+              >Cambridge English Entry Level Certificate</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>

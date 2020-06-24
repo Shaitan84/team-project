@@ -1,0 +1,294 @@
+.contact-title {
+  width: 240px;
+  padding-top: 55px;
+  font-size: 14px;
+  font-family: $font-montserrat;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  line-height: 1.86;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.contact-subtitle {
+  width: 264px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  font-size: 11px;
+  font-family: $font-montserrat;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  line-height: 1.818;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.orange {
+  color: #ff6b08;
+}
+
+.background {
+  width: 100%;
+  height: 538px;
+  background-image: url(../images/contact-form-footer/bg-contacts.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 34px;
+}
+
+.input {
+  display: block;
+  width: 278px;
+  height: 48px;
+  border-style: solid;
+  padding-left: 18px;
+  margin-bottom: 28px;
+  border-width: 1px;
+  border-color: rgb(255, 255, 255);
+  background-color: transparent;
+  font-family: $font-montserrat;
+  color: rgb(255, 255, 255);
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 2.885;
+  text-align: left;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.input::placeholder {
+  color: rgb(255, 255, 255);
+}
+
+.contact-form-button {
+  display: block;
+  background-color: rgb(255, 107, 8);
+  border: 1px solid rgb(255, 107, 8);
+  width: 252px;
+  height: 50px;
+  font-size: 11px;
+  color: rgb(255, 255, 255);
+  line-height: 1.2;
+  text-align: center;
+  font-family: $font-montserrat;
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin: 0 auto;
+  margin-bottom: 58px;
+}
+
+.copyrights {
+  width: 100%;
+  height: 74px;
+  background-color: black;
+}
+
+.copyrights__text {
+  display: block;
+  font-size: 11px;
+  font-family: $font-montserrat;
+  color: rgba(253, 254, 254, 0.42);
+  line-height: 3.409;
+  text-align: center;
+  padding-top: 20px;
+  margin: 0 auto;
+}
+
+.phone-number {
+  display: flex;
+  font-size: 18px;
+  font-family: $font-montserrat;
+  color: rgb(17, 21, 23);
+  font-weight: bold;
+  margin-left: 40px;
+}
+
+.phone-number::before {
+  content: '';
+  display: block;
+  height: 32px;
+  background-repeat: no-repeat;
+  background-image: url(../images/contact-form-footer/icon-tel.png);
+  padding-left: 35px;
+  padding-top: 10px;
+}
+
+.instagram {
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-image: url(../images/contact-form-footer/instagram.png);
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+.logo {
+  width: 90px;
+  height: 40px;
+  background-image: url(../images/contact-form-footer/logo.png);
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+@media (min-width: 768px) {
+
+  .background {
+    background-image: url(../images/contact-form-footer/bg-tablet.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 535px;
+  }
+
+  .contact-title {
+    width: 550px;
+    padding-top: 55px;
+    font-size: 22px;
+    font-family: $font-montserrat;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    line-height: 1.729;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .contact-subtitle {
+    width: 470px;
+    padding-top: 24px;
+    padding-bottom: 40px;
+    font-size: 15px;
+    font-family: $font-montserrat;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    line-height: 1.33;
+    letter-spacing: 0.75px;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .break-word {
+    word-wrap: break-word;
+  }
+
+  .input {
+    display: block;
+    width: 360px;
+    height: 50px;
+    border-style: solid;
+    padding-left: 18px;
+    margin-bottom: 28px;
+    border-width: 1px;
+    border-color: rgb(255, 255, 255);
+    background-color: transparent;
+    font-family: $font-montserrat;
+    color: rgb(255, 255, 255);
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 2.885;
+    text-align: left;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+
+  .contacts :nth-child(1) {
+    order: 1;
+  }
+
+  .contacts :nth-child(3) {
+    order: 1;
+  }
+
+  .contacts-list {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row-reverse;
+  }
+
+  .phone-number {
+    margin-left: 0;
+    padding-top: 8px;
+  }
+
+  .instagram {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-image: url(../images/contact-form-footer/instagram.png);
+    background-repeat: no-repeat;
+    margin-top: 0px;
+    position: relative;
+    margin-right: 120px;
+  }
+
+  .instagram::before {
+    display: block;
+    content: '';
+    width: 1px;
+    height: 30px;
+    background-color: #818181;
+    position: absolute;
+    left: -30px;
+    top: 4px;
+  }
+
+  .logo {
+    margin: 0;
+    padding: 0;
+  }
+
+  .contacts-list {
+    margin-bottom: 31px;
+  }
+
+  .copyrights__text {
+    text-align: left;
+    margin-left: 35px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .background {
+    background-image: url(../images/contact-form-footer/desktop-bg.png);
+    width: 100%;
+    height: 750px;
+  }
+
+  .contact-title {
+    width: 930px;
+    padding-top: 55px;
+    font-size: 38px;
+    line-height: 1.33;
+    padding-bottom: 30px;
+  }
+
+  .contact-subtitle {
+    width: 550px;
+    font-size: 18px;
+    line-height: 1.361;
+  }
+
+  .input {
+    display: block;
+    width: 624px;
+    height: 76px;
+    margin-bottom: 55px;
+  }
+
+  .contact-form-button {
+    width: 352px;
+    height: 70px;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .copyrights__text {
+    margin-left: 100px;
+  }
+}
