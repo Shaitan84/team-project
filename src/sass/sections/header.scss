@@ -2,24 +2,24 @@
   background-image: url(../images/header-foto/shadow-mobile.png);
   background-repeat: no-repeat;
   background-position-y: 602px;
-}
 
-.header__list {
-  display: flex;
-}
+  &__list {
+    display: flex;
+  }
 
-.header__link {
-  color: #b9b9b9;
-  font-size: 12px;
-  font-family: $font-montserrat;
-  font-weight: 700;
-  line-height: 14px;
-  padding-right: 42px;
-  text-transform: uppercase;
-}
+  &__link {
+    color: #b9b9b9;
+    font-size: 12px;
+    font-family: $font-montserrat;
+    font-weight: 700;
+    line-height: 14px;
+    padding-right: 42px;
+    text-transform: uppercase;
 
-.header__link:hover {
-  color: #ff6b08;
+    &:hover {
+      color: #ff6b08;
+    }
+  }
 }
 
 .navigation {
@@ -140,83 +140,114 @@
 
 .about-us {
   margin-bottom: 88px;
-}
 
-.about-us__foto {
-  width: 216px;
-  height: auto;
-  margin: 0 auto;
-}
+  &__title {
+    color: #18191d;
+    font-family: $font-montserrat;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 29px;
+    letter-spacing: 0.6px;
+    white-space: pre-line;
+    margin-bottom: 32px;
+  }
 
-.about-us__teacher {
-  margin: auto;
-  // margin-bottom: 88px;
+  &__heavy {
+    color: #b9b9b9;
+    font-family: $font-montserrat;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: 0.75px;
+  }
+
+  &__plus25 {
+    color: #18191d;
+    font-family: $font-montserrat;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 20px;
+    margin-bottom: 36px;
+    text-align: justify;
+
+    &info {
+      color: #ff6b08;
+    }
+  }
+
+  &__foto {
+    width: 216px;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  &__teacher {
+    margin: auto;
+  }
 }
 
 .advantages__list {
   display: flex;
-  // justify-content: center;
   flex-wrap: wrap;
-  // align-items: center;
-}
 
-.advantages__list-item {
-  display: flex;
-}
+  &-item {
+    display: flex;
+  }
 
-.advantages__list-icon {
-  fill: #ff6b08;
-  width: 280px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
+  &-icon {
+    fill: #ff6b08;
+    width: 280px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 
-.advantages__list-icon-wrapper {
-  width: 58px;
-  height: 58px;
-  margin: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-right: 12px;
-  border-top: 2px solid #ff6b08;
-  border-left: 2px solid #ff6b08;
-  border-bottom: 2px solid #ff6b08;
-  background: linear-gradient(#ff6b08, #ff6b08),
-    linear-gradient(#ff6b08, #ff6b08);
-  background-size: 2px 10px, 2px 10px;
-  background-repeat: no-repeat, no-repeat;
-  background-position: right top, right bottom;
-}
+    & p {
+      color: #18191d;
+      width: 130px;
+      font-size: 13px;
+      line-height: 20px;
+      letter-spacing: 0.65px;
+      font-family: $font-montserrat;
+      font-weight: 700;
+    }
 
-.advantages__list-icon-wrapper:not(:last-child) {
-  margin-bottom: 24px;
-}
+    &_student {
+      width: 30px;
+      height: 36px;
+    }
 
-.advantages__list-icon p {
-  color: #18191d;
-  width: 130px;
-  font-size: 13px;
-  line-height: 20px;
-  letter-spacing: 0.65px;
-  font-family: $font-montserrat;
-  font-weight: 700;
-}
+    &_mobile {
+      width: 34px;
+      height: 34px;
+    }
 
-.advantages__list-icon_student {
-  width: 30px;
-  height: 36px;
-}
+    &_insuarence {
+      width: 30px;
+      height: 36px;
+    }
 
-.advantages__list-icon_mobile {
-  width: 34px;
-  height: 34px;
-}
+    &-wrapper {
+      width: 58px;
+      height: 58px;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-right: 12px;
+      border-top: 2px solid #ff6b08;
+      border-left: 2px solid #ff6b08;
+      border-bottom: 2px solid #ff6b08;
+      background: linear-gradient(#ff6b08, #ff6b08),
+        linear-gradient(#ff6b08, #ff6b08);
+      background-size: 2px 10px, 2px 10px;
+      background-repeat: no-repeat, no-repeat;
+      background-position: right top, right bottom;
 
-.advantages__list-icon_insuarence {
-  width: 30px;
-  height: 36px;
+      &:not(:last-child) {
+        margin-bottom: 24px;
+      }
+    }
+  }
 }
 
 @media (min-width: 768px) {
@@ -228,20 +259,16 @@
 
   .navigation {
     margin-bottom: 60px;
-  }
 
-  .navigation__logo {
-    width: 126px;
+    &__logo {
+      width: 128px;
+    }
   }
 
   .logotype__fire-svg {
     width: 28px;
     height: 38px;
   }
-
-  // .btn-consultation {
-  //   display: none;
-  // }
 
   .logotype__hell {
     font-size: 25px;
@@ -274,22 +301,22 @@
   .about-us {
     display: flex;
     justify-content: space-between;
-  }
 
-  .about-us__foto {
-    width: 370px;
-    height: auto;
-    margin: 0;
-  }
+    &__foto {
+      width: 370px;
+      height: auto;
+      margin: 0;
+    }
 
-  .about-us__wrapper {
-    width: 286px;
-  }
+    &__wrapper {
+      width: 286px;
+    }
 
-  .about-us__title {
-    font-size: 26px;
-    line-height: 33px;
-    letter-spacing: 0.78px;
+    &__title {
+      font-size: 26px;
+      line-height: 33px;
+      letter-spacing: 0.78px;
+    }
   }
 
   .btn-freelesson {
@@ -299,10 +326,10 @@
   .advantages__list {
     justify-content: space-between;
     padding-bottom: 50px;
-  }
 
-  .advantages__list-icon {
-    width: 200px;
+    &-icon {
+      width: 200px;
+    }
   }
 }
 
@@ -329,36 +356,41 @@
 
   .navigation {
     justify-content: flex-end;
-  }
+    width: 100%;
 
-  .navigation__logo {
-    margin-right: 178px;
+    &__logo {
+      margin-right: 178px;
+    }
   }
 
   .about-us {
     margin-bottom: 130px;
-  }
 
-  .about-us__title {
-    font-size: 48px;
-    line-height: 58px;
-    letter-spacing: 1.44px;
-  }
+    &__title {
+      font-size: 48px;
+      line-height: 58px;
+      letter-spacing: 1.44px;
+    }
 
-  .about-us__heavy {
-    font-size: 18px;
-    line-height: 26px;
-    letter-spacing: 0.9px;
-  }
+    &__heavy {
+      font-size: 18px;
+      line-height: 26px;
+      letter-spacing: 0.9px;
+    }
 
-  .about-us__plus25 {
-    font-size: 18px;
-    line-height: 26px;
-    letter-spacing: 0.9px;
-  }
+    &__plus25 {
+      font-size: 18px;
+      line-height: 26px;
+      letter-spacing: 0.9px;
+    }
 
-  .about-us__wrapper {
-    width: 504px;
+    &__wrapper {
+      width: 504px;
+    }
+
+    &__foto {
+      width: 588px;
+    }
   }
 
   .btn-freelesson {
@@ -370,33 +402,51 @@
     height: 70px;
   }
 
-  .about-us__foto {
-    width: 588px;
-  }
-
   .advantages__list-icon {
-    width: 280px;
-  }
+    width: 380px;
+    position: relative;
+    justify-content: space-between;
 
-  .advantages__list-icon p {
-    font-size: 18px;
-    line-height: 28px;
-    letter-spacing: 0.9px;
-  }
+    & p {
+      font-size: 18px;
+      line-height: 28px;
+      letter-spacing: 0.9px;
+      width: 300px;
+      position: absolute;
+      left: 82px;
+      top: 22px;
+    }
 
-  .advantages__list-icon-wrapper {
-    width: 102px;
-    height: 102px;
-    margin: 0;
-  }
+    &_tel {
+      width: 348px;
+    }
 
-  .advantages__list-icon-wrapper:not(:last-child) {
-    margin-bottom: 0px;
-  }
+    &_baks {
+      width: 318px;
+    }
 
-  .advantages__list-icon_student {
-    width: 40px;
-    height: 45px;
+    &-wrapper {
+      width: 102px;
+      height: 102px;
+      margin: 0;
+
+      &:not(:last-child) {
+        margin-bottom: 0px;
+      }
+    }
+
+    &_student {
+      width: 50px;
+      height: 56px;
+    }
+    &_mobile{
+      width: 50px;
+      height: 56px;
+    }
+    &_insuarence{
+      width: 50px;
+      height: 56px;
+    }
   }
 }
 
@@ -412,6 +462,11 @@
 
   .header-menu__list {
     display: block;
+
+@media (min-width: 1680px) {
+  .navigation__logo {
+    margin-right: 322px;
+
   }
 }
 
@@ -448,5 +503,11 @@
 
   .header_burger:after {
     bottom: 0;
+  }
+}
+
+@media (max-width: 1279px) {
+  .header__menu {
+    display: none;
   }
 }
