@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27 16" width="27" height="16">
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: #ff6b08 } 
+	</style>
+	<g id="Отзывы ">
+		<g id="arrows">
+			<g id="arrow short">
+				<path id="Rectangle 1" class="shp0" d="M1 7L23 7L23 9L1 9L1 7Z" />
+				<path id="Rectangle 1 copy 2" class="shp0" d="M17.65 14.99L26 8.36L24.37 7.01L16.02 13.64L17.65 14.99Z" />
+				<path id="Rectangle 1 copy 3" class="shp0" d="M17.65 1.01L26 7.64L24.37 8.99L16.02 2.36L17.65 1.01Z" />
+			</g>
+		</g>
+	</g>
+</svg>
