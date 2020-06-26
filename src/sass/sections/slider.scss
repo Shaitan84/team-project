@@ -29,7 +29,7 @@
         text-align: center;
       }
       &_photo {
-        background-image: url(/images/1.png);
+        background-image: url(/src/images/slider/images/slider_1.png);
         background-size: contain;
         background-color: #f1f1f1;
         width: 80px;
@@ -40,7 +40,7 @@
         margin-top: 22px;
       }
       &_icon {
-        background-image: url(/icons/vk.svg);
+        background-image: url(/src/images/slider/icons/vk.svg);
         background-repeat: no-repeat;
         text-align: center;
         margin: 0 auto;
@@ -119,10 +119,10 @@
       padding-top: 40px;
       position: absolute;
       &_right {
-        background-image: url(/icons/arrow-right.svg);
+        background-image: url(/src/images/slider/icons/arrow-right.svg);
       }
       &_left {
-        background-image: url(/icons/arrow-left.svg);
+        background-image: url(/src/images/slider/icons/arrow-left.svg);
         &_joint {
           width: 25px;
           height: 14px;
@@ -153,7 +153,7 @@
           margin-right: 45px;
         }
         &_photo {
-          background-image: url(/images/1.png);
+          background-image: url(/src/images/slider/images/slider_1.png);
         }
         &_icon {
           margin-bottom: 50px;
@@ -195,7 +195,7 @@
       }
       &__arrow {
         width: 724px;
-        top: 250px;
+        top: 270px;
       }
       &__list {
         width: 510px;
@@ -239,7 +239,7 @@
           }
         }
         &_photo {
-          background-image: url(/images/7.png);
+          background-image: url(/src/images/slider/images/slider_7.png);
           width: 145px;
           height: 145px;
           border-radius: 72px;
@@ -247,7 +247,7 @@
       }
       &__arrow {
         width: 1176px;
-        top: 280px;
+        top: 300px;
         margin-left: 52px;
       }
     }
