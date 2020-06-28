@@ -282,7 +282,7 @@
     &::before {
       height: 100vw;
       transform-origin: 100% 0;
-      transform: rotate(-90deg) translate(63px, -220px);
+      transform: rotate(-90deg) translate(63px, -198px);
     }
   }
 
@@ -326,7 +326,6 @@
 // Блок Почему нас выбирают
 
 .why-choose-us {
-  // padding-bottom: 340px; Я паддинг вносила.
   &__title {
     font-family: $font-montserrat;
     font-size: 20px;
@@ -381,9 +380,6 @@
 }
 @media (min-width: 768px) {
   .why-choose-us {
-    // background-color: #000000; Цвет бекграунда убрала, чтоб твой блок "залез" на цвет моей секции
-    // padding-top: 64px; Отодвигала своим нижним марджином
-    // padding-bottom: 180px; Паддинг боттом указывала)
     &__title {
       font-size: 26px;
       line-height: 33px;
@@ -406,9 +402,6 @@
 }
 @media (min-width: 1280px) {
   .why-choose-us {
-    // background-color: #000000; Цвет бекграунда убрала, чтоб твой блок "залез" на цвет моей секции
-    // padding-top: 74px; Отодвигала своим нижним марджином
-    // padding-bottom: 326px; Паддинг боттом указывала)
     &__title {
       font-size: 42px;
       letter-spacing: 2px;
