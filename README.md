@@ -1,12 +1,12 @@
 Проект сайта преподавателя английского языка.
 
-Исполнители: Oleg Seleznev,
-             Anastasia Kolieva,
-             Eвгений Кривцов,
-             Vasyl Chupylka,
-             Valerii Ryzhichkin,
-             Melnychuk Olexandr,
-             Yuliia Berehova.
+Исполнители: Oleg Seleznev (TeamLead, секция Header),
+             Anastasia Kolieva (SCRUM master, секция "Наша программа"+background следующей секции),
+             Eвгений Кривцов (секция FOOTER и форма обратной связи),
+             Vasyl Chupylka(секция "Отзывы выпускников" (слайдер)),
+             Valerii Ryzhichkin (секция "Преподаватель"),
+             Melnychuk Olexandr (секция "Главные проблемы учеников", "Почему нас выбирают", "Мы гарантируем"),
+             Yuliia Berehova(секция "Как мы это делаем").
              
 Сайт выполнен по адаптивной вёрстке,в трёх вариантах под мобильный телефон, планшет и ПК. 
 Вся работа выполнена с использованием Flexbox. Именование классов по ВЕМ. В проекте использовался SASS.
